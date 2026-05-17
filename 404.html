@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting | TNN</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var path = window.location.pathname || '/';
+        var query = window.location.search ? '&' + window.location.search.slice(1) : '';
+        var hash = window.location.hash || '';
+        window.location.replace('/?p=' + encodeURIComponent(path) + query + hash);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting to Tech News Network...
+  </body>
+</html>
