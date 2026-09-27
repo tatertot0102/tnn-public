@@ -1,188 +1,488 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bthstnn.org/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/about/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/hardnews/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/features/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/breaking/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/docs/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/opinion/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/sports/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/staff/aanya-misra/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/alex-wolfowitz/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <loc>https://bthstnn.org/staff/jack-tergesen/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/iffat-abidah/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/isaiah-ferguson/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/staff/jack-tergesen/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <loc>https://bthstnn.org/staff/jayden-cunha/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/jones-hilburn/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/lia-pelle/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/matthew-roth/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/maximo-welter-gomez/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/staff/henry-berlach/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <loc>https://bthstnn.org/staff/maxwell-reyfman/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/zane-wolf/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/ibrahim-chaudhri/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/takuo-yamamoto/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/nicholas-chan/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/takuo-yamamoto/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/annarose-grizzle/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/alex-wolfowitz/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/eric-law/</loc>
-    <lastmod>2026-05-21T11:16:52.782Z</lastmod>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/henry-berlach/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/aanya-misra/</loc>
+    <lastmod>2026-09-27T23:42:36.737Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/7e05eb1f-7a16-452f-a464-f466f0ec1d38/tnn-weather-noreaster/</loc>
+    <lastmod>2026-09-27T15:15:44.309756+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/825270016_17908912911517524_4698267365457268933_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=110&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=4l6bylOFJbsQ7kNvwHchE7y&amp;_nc_oc=AdpqG8I949FTAZHhORHUUQTaj_3FuM5cIb4iLYIpQpKp3zTA35DHw53SqM6cMfSnwYs&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=NtXyCL_IEFRN-Sng8MXJ1A&amp;_nc_ss=70689&amp;oh=00_AQL7nZ5E3yeUdLfA-KRmY6OIMWesyf8aWzyFegtqtwqUCA&amp;oe=6ABF000D</image:loc>
+      <image:title>TNN Weather: Nor&apos;easter</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/825270016_17908912911517524_4698267365457268933_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=110&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=4l6bylOFJbsQ7kNvwHchE7y&amp;_nc_oc=AdpqG8I949FTAZHhORHUUQTaj_3FuM5cIb4iLYIpQpKp3zTA35DHw53SqM6cMfSnwYs&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=NtXyCL_IEFRN-Sng8MXJ1A&amp;_nc_ss=70689&amp;oh=00_AQL7nZ5E3yeUdLfA-KRmY6OIMWesyf8aWzyFegtqtwqUCA&amp;oe=6ABF000D</video:thumbnail_loc>
+      <video:title>TNN Weather: Nor&apos;easter</video:title>
+      <video:description>TNN Reporter Jack Tergesen breaks down the Nor’Easter bearing down on the Tri-State area. Impacts will persist until mid-day Monday with on and off rain, and winds steadily decreasing throughout the event.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DdxIQ0Bxv0k/</video:content_loc>
+      
+      
+      <video:publication_date>2026-09-27T15:15:04.816Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea/introducing-tech-news-network/</loc>
     <lastmod>2026-05-15T01:59:18.463623+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/622338033_17871029817517524_1294238213879785682_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=111&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=vmCcPYL6AioQ7kNvwHz0dGl&amp;_nc_oc=Adqmlmw_uMzzknBCW-zjPhgQvKke_F3Ljz5sso1a_0T2U1VLKhC3EBjtkxCgl5xLCOM&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=JZ9S6SybW-SKyZCfZpCHrg&amp;_nc_ss=70689&amp;oh=00_Af437hhbrvyr7v_SF3pCgvwSy9GZdhPAwIW2nAj1VmEkqA&amp;oe=6A0C4517</image:loc>
+      <image:title>Introducing Tech News Network. </image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/622338033_17871029817517524_1294238213879785682_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=111&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=vmCcPYL6AioQ7kNvwHz0dGl&amp;_nc_oc=Adqmlmw_uMzzknBCW-zjPhgQvKke_F3Ljz5sso1a_0T2U1VLKhC3EBjtkxCgl5xLCOM&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=JZ9S6SybW-SKyZCfZpCHrg&amp;_nc_ss=70689&amp;oh=00_Af437hhbrvyr7v_SF3pCgvwSy9GZdhPAwIW2nAj1VmEkqA&amp;oe=6A0C4517</video:thumbnail_loc>
+      <video:title>Introducing Tech News Network. </video:title>
+      <video:description>Watch Introducing Tech News Network.  from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DPfKk73jrtH/</video:content_loc>
+      
+      
+      <video:publication_date>2026-05-15T01:59:18.463Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/0f13def5-5257-4294-8ee7-047b10d635dc/tnn-weather-meteorologist-jack-tergesen-reports/</loc>
     <lastmod>2026-05-15T01:47:37.881792+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.71878-15/622049220_2419843411802085_8857899025004675027_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=103&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=4BHbXFSV-LUQ7kNvwE3dBLL&amp;_nc_oc=AdobPJAnVTMlS5r4amTUQerqEp1JdsBvka4XUO01fvn0cyrgAwcRFZYSIOTmvYDBQnY&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=uUtgXOV9x1V9R0qkSXVfyQ&amp;_nc_ss=70689&amp;oh=00_Af4TynAf2jPPOf-RJsJ_dqHCGVxFawgA6_0m1qgRea42rQ&amp;oe=6A0C58F4</image:loc>
+      <image:title>TNN WEATHER: Meteorologist Jack Tergesen reports</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.71878-15/622049220_2419843411802085_8857899025004675027_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=103&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=4BHbXFSV-LUQ7kNvwE3dBLL&amp;_nc_oc=AdobPJAnVTMlS5r4amTUQerqEp1JdsBvka4XUO01fvn0cyrgAwcRFZYSIOTmvYDBQnY&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=uUtgXOV9x1V9R0qkSXVfyQ&amp;_nc_ss=70689&amp;oh=00_Af4TynAf2jPPOf-RJsJ_dqHCGVxFawgA6_0m1qgRea42rQ&amp;oe=6A0C58F4</video:thumbnail_loc>
+      <video:title>TNN WEATHER: Meteorologist Jack Tergesen reports</video:title>
+      <video:description>Watch TNN WEATHER: Meteorologist Jack Tergesen reports from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DT7DyKIjgEO/</video:content_loc>
+      
+      
+      <video:publication_date>2026-05-15T01:45:52.632Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6/introducing-tnns-marketing-team/</loc>
-    <lastmod>2026-05-17T04:27:33.272327+00:00</lastmod>
+    <lastmod>2026-08-30T22:00:32.327575+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/683036142_17885252436517524_2793316798306115508_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=fhyqJXpkn1EQ7kNvwHHYfVr&amp;_nc_oc=Adqu90fbjYX0FTAqtrAx0n3NKwy0n8CdnpyAKeWYO4JjaQaamKJ-NRknWheARushnnY&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=5jFexTYFGP_SLa0aJ3k7Gg&amp;_nc_ss=70689&amp;oh=00_Af4jSeZDZtPT57fT9_ANtgtNB8QVsbiSmZnLpqReAeNI6g&amp;oe=6A081A9C</image:loc>
+      <image:title>Introducing TNN&apos;s Marketing Team</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/683036142_17885252436517524_2793316798306115508_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=fhyqJXpkn1EQ7kNvwHHYfVr&amp;_nc_oc=Adqu90fbjYX0FTAqtrAx0n3NKwy0n8CdnpyAKeWYO4JjaQaamKJ-NRknWheARushnnY&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=5jFexTYFGP_SLa0aJ3k7Gg&amp;_nc_ss=70689&amp;oh=00_Af4jSeZDZtPT57fT9_ANtgtNB8QVsbiSmZnLpqReAeNI6g&amp;oe=6A081A9C</video:thumbnail_loc>
+      <video:title>Introducing TNN&apos;s Marketing Team</video:title>
+      <video:description>Watch Introducing TNN&apos;s Marketing Team from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DSiHj85DqpX/</video:content_loc>
+      
+      <video:duration>51</video:duration>
+      <video:publication_date>2026-05-05T03:20:17.046Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/03abb054-4810-424c-8976-498f306c24ac/the-history-of-rocky-s-deli/</loc>
-    <lastmod>2026-05-17T04:27:44.158691+00:00</lastmod>
+    <lastmod>2026-09-12T22:12:19.345819+00:00</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/763f9a0c-15b5-415d-8079-05e0a00f4858/introducing-tnn-sports-superbowl-takes/</loc>
-    <lastmod>2026-05-17T04:26:27.46931+00:00</lastmod>
+    <lastmod>2026-09-27T15:16:00.750049+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/684932864_17885258064517524_6083145510315555101_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=107&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=JvdfZuR3u8YQ7kNvwHl7_VM&amp;_nc_oc=AdpDR9iNCNuzKVaa-HU5U_Tv-Xclm3Vf1xHLjsBPgMtCVUt-z7iMtkHZ1L6FJdbIbjM&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=qMi5i8yRxiWhtMlDZD2EjQ&amp;_nc_ss=70689&amp;oh=00_Af6HbzPD1z0hfJGZrs_FQ5YiTd26VZRoyp2f4vAs7x5MjA&amp;oe=6A080E5A</image:loc>
+      <image:title>Introducing TNN Sports: Superbowl Takes</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/684932864_17885258064517524_6083145510315555101_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=107&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=JvdfZuR3u8YQ7kNvwHl7_VM&amp;_nc_oc=AdpDR9iNCNuzKVaa-HU5U_Tv-Xclm3Vf1xHLjsBPgMtCVUt-z7iMtkHZ1L6FJdbIbjM&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=qMi5i8yRxiWhtMlDZD2EjQ&amp;_nc_ss=70689&amp;oh=00_Af6HbzPD1z0hfJGZrs_FQ5YiTd26VZRoyp2f4vAs7x5MjA&amp;oe=6A080E5A</video:thumbnail_loc>
+      <video:title>Introducing TNN Sports: Superbowl Takes</video:title>
+      <video:description>Watch Introducing TNN Sports: Superbowl Takes from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DUeUrZGD8-0/</video:content_loc>
+      
+      <video:duration>102</video:duration>
+      <video:publication_date>2026-05-05T03:13:38.511Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/96bcd650-7526-4e59-9e45-d4f52917f3ca/very-interesting-and-intense-meet-the-cast-of-lost-girl/</loc>
     <lastmod>2026-05-15T04:10:19.945815+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/uX2bdBxbI-8/hqdefault.jpg</image:loc>
+      <image:title>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/uX2bdBxbI-8/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</video:title>
+      <video:description>Watch ‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl from Tech News Network.</video:description>
+      
+      <video:player_loc>https://www.youtube.com/embed/uX2bdBxbI-8</video:player_loc>
+      
+      <video:publication_date>2026-05-05T01:35:55.283Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/8fc6e658-5de5-4537-bf32-c8667360e652/tnn-meteorologist-jack-tergesen-breaks-down-the-upcoming-storm-2-22-26/</loc>
     <lastmod>2026-05-15T01:49:43.086062+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/659716344_17881206177517524_6194355232911451125_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=109&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=pass1sYq_6kQ7kNvwFnFqUB&amp;_nc_oc=AdquK-rka-u9xXZUXMsuUlqbORe4lSZbjVAF2k_uD48q7Dag3eaafkQHwDabsjLHFZk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=EOGX_fKErfYaLi99MJ3lIA&amp;_nc_ss=70689&amp;oh=00_Af4T0TJ_MeHOhqabeChHG7aKUFDnqzyX1Sb7f0_ljzKTZQ&amp;oe=6A0C449B</image:loc>
+      <image:title>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/659716344_17881206177517524_6194355232911451125_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=109&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=pass1sYq_6kQ7kNvwFnFqUB&amp;_nc_oc=AdquK-rka-u9xXZUXMsuUlqbORe4lSZbjVAF2k_uD48q7Dag3eaafkQHwDabsjLHFZk&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=EOGX_fKErfYaLi99MJ3lIA&amp;_nc_ss=70689&amp;oh=00_Af4T0TJ_MeHOhqabeChHG7aKUFDnqzyX1Sb7f0_ljzKTZQ&amp;oe=6A0C449B</video:thumbnail_loc>
+      <video:title>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</video:title>
+      <video:description>Watch TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26) from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DVDQPrdDtnP/</video:content_loc>
+      
+      
+      <video:publication_date>2026-05-15T01:49:43.086Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd/looking-back-at-anti-ice-resistance-in-tech/</loc>
     <lastmod>2026-05-15T04:10:48.959916+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/9GNXWzEFR6E/hqdefault.jpg</image:loc>
+      <image:title>Looking Back at Anti-ICE resistance in Tech</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/9GNXWzEFR6E/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Looking Back at Anti-ICE resistance in Tech</video:title>
+      <video:description>Watch Looking Back at Anti-ICE resistance in Tech from Tech News Network.</video:description>
+      
+      <video:player_loc>https://www.youtube.com/embed/9GNXWzEFR6E</video:player_loc>
+      <video:duration>157</video:duration>
+      <video:publication_date>2026-05-05T01:28:39.878Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/dfb1c672-80d6-40e9-94eb-6ecfd26e3015/tech-s-courtyard-untold-history-what-s-next/</loc>
-    <lastmod>2026-05-05T18:52:26.462745+00:00</lastmod>
+    <lastmod>2026-07-30T20:35:09.272538+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/Em2w1gsn15w/hqdefault.jpg</image:loc>
+      <image:title>Tech’s Courtyard: Untold History &amp; What’s Next</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Em2w1gsn15w/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Tech’s Courtyard: Untold History &amp; What’s Next</video:title>
+      <video:description>Watch Tech’s Courtyard: Untold History &amp; What’s Next from Tech News Network.</video:description>
+      
+      <video:player_loc>https://www.youtube.com/embed/Em2w1gsn15w</video:player_loc>
+      <video:duration>143</video:duration>
+      <video:publication_date>2026-05-03T21:38:40.257Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/fe50a30f-7f6f-4288-9a34-052a03b09bde/who-do-tech-students-have-winning-in-the-nba-finals/</loc>
+    <lastmod>2026-07-30T20:43:18.436741+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/718935337_17890703949517524_2932489583860232775_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=eUXgh1JjvZQQ7kNvwHducND&amp;_nc_oc=AdrxuG9UEciXzQSDZe3rN-cySdzbrVlp58pb33TarQdyqoDsAU_j_tDztn3GATCyKs8&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=Zk3ozb0192lEMkXd6O8xsA&amp;_nc_ss=73689&amp;oh=00_AQGXKVfi5LI4ju5lwAfEI03RVg5MM0frdnC3l2ZrEGZmbw&amp;oe=6A717205</image:loc>
+      <image:title>Who do Tech Students have winning in the NBA Finals?</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/718935337_17890703949517524_2932489583860232775_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=100&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=eUXgh1JjvZQQ7kNvwHducND&amp;_nc_oc=AdrxuG9UEciXzQSDZe3rN-cySdzbrVlp58pb33TarQdyqoDsAU_j_tDztn3GATCyKs8&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=Zk3ozb0192lEMkXd6O8xsA&amp;_nc_ss=73689&amp;oh=00_AQGXKVfi5LI4ju5lwAfEI03RVg5MM0frdnC3l2ZrEGZmbw&amp;oe=6A717205</video:thumbnail_loc>
+      <video:title>Who do Tech Students have winning in the NBA Finals?</video:title>
+      <video:description>Hosts: @henryberlach &amp; @matthewroth_13
+Directors: @zanewwolf, @nicksilverbricks, @takuo.ymt51, and @maxwell.reyfman
+Video Editor: @nicksilverbricks
+#newyorkknicks #nba #nbafinals</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DZN12L7t_-1/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-07-30T20:33:30.994Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/1a6b2c14-59f1-4121-962d-7c39205aabec/who-do-tech-students-think-will-win-the-ncaa-men-s-basketball-championship/</loc>
-    <lastmod>2026-05-11T21:57:50.442475+00:00</lastmod>
+    <lastmod>2026-08-30T22:01:35.432576+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.71878-15/660720678_2116039742300829_3779860284466248638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=101&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=dLrbY01gXR0Q7kNvwFujku9&amp;_nc_oc=AdoUvp1UG4kTfo7AdYQi4s-y70gxpCP4M2QdX2DOy6rdrZlUTt3_ivVy8kTx6F__8kA&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=fQd0k1gqYz3WH1SzXvikKA&amp;_nc_ss=70689&amp;oh=00_Af71NZ5_OrOll9aSUA_RiJRE1Q0UMWYOxeqOnTkYK-U5zg&amp;oe=6A080D08</image:loc>
+      <image:title>Who do Tech students think will win the NCAA Men’s Basketball Championship?</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.71878-15/660720678_2116039742300829_3779860284466248638_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=101&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=dLrbY01gXR0Q7kNvwFujku9&amp;_nc_oc=AdoUvp1UG4kTfo7AdYQi4s-y70gxpCP4M2QdX2DOy6rdrZlUTt3_ivVy8kTx6F__8kA&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=fQd0k1gqYz3WH1SzXvikKA&amp;_nc_ss=70689&amp;oh=00_Af71NZ5_OrOll9aSUA_RiJRE1Q0UMWYOxeqOnTkYK-U5zg&amp;oe=6A080D08</video:thumbnail_loc>
+      <video:title>Who do Tech students think will win the NCAA Men’s Basketball Championship?</video:title>
+      <video:description>Watch Who do Tech students think will win the NCAA Men’s Basketball Championship? from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DWy8-NWNs4M/</video:content_loc>
+      
+      <video:duration>48</video:duration>
+      <video:publication_date>2026-05-05T03:00:38.372Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/89d88551-dc23-4903-aed8-525f4c758522/taking-a-look-back-at-the-blizzard-of-2026/</loc>
     <lastmod>2026-05-15T01:51:51.773341+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://img.youtube.com/vi/Jw4_mPM_Xlg/hqdefault.jpg</image:loc>
+      <image:title>Taking a Look Back at The Blizzard of 2026</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Jw4_mPM_Xlg/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Taking a Look Back at The Blizzard of 2026</video:title>
+      <video:description>Watch Taking a Look Back at The Blizzard of 2026 from Tech News Network.</video:description>
+      
+      <video:player_loc>https://www.youtube.com/embed/Jw4_mPM_Xlg</video:player_loc>
+      
+      <video:publication_date>2026-05-05T01:30:55.972Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079/where-does-26-see-themselves-in-10-years/</loc>
+    <lastmod>2026-07-30T20:37:43.299661+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/725817008_17892624705517524_3718066639465317642_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=106&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=ECFOFtKe80EQ7kNvwGtF-ER&amp;_nc_oc=AdpCSW8BHVTTzayAlRcey7b0e0OCxpgyGDPDzK4Gd3USMtld-oEYxevDQxMVutqFq50&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=9twrgJyio9LeW-w16e4nDA&amp;_nc_ss=73689&amp;oh=00_AQFZhOU6w9-VxRx_bjfUCJmWACTbcEUxXxgGrIF4M9DSTg&amp;oe=6A717008</image:loc>
+      <image:title>Where does &apos;26 see themselves in 10 Years?</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/725817008_17892624705517524_3718066639465317642_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=106&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=ECFOFtKe80EQ7kNvwGtF-ER&amp;_nc_oc=AdpCSW8BHVTTzayAlRcey7b0e0OCxpgyGDPDzK4Gd3USMtld-oEYxevDQxMVutqFq50&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=9twrgJyio9LeW-w16e4nDA&amp;_nc_ss=73689&amp;oh=00_AQFZhOU6w9-VxRx_bjfUCJmWACTbcEUxXxgGrIF4M9DSTg&amp;oe=6A717008</video:thumbnail_loc>
+      <video:title>Where does &apos;26 see themselves in 10 Years?</video:title>
+      <video:description>Where does the Class of 2026 see themselves in 10 years?
+
+Brought to you by TNN Reporters @jacktergesenn and @annarose_griz !
+
+#bths #classof2026 #graduation #nyc #collegedecisionday</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DZqrPyTuF4_/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-07-30T20:37:43.299Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/bae1a262-f878-41ec-9f0b-7657eed925d1/a-high-school-student-band-lulu-and-monica-interview/</loc>
+    <lastmod>2026-07-30T20:42:30.003651+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/728213094_17893237548517524_40221732745483364_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=104&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=VQ06I_19ZOsQ7kNvwEWGZZg&amp;_nc_oc=AdqybRYF95JmC0YcCArs7DebAUH93Ns3UXv5uqy8gQkAdU0GcSRzd9OK2mFxpHi5Xow&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=wKS7my60Z70gc8xBeUK23Q&amp;_nc_ss=70689&amp;oh=00_AQE8hW-M-OGUOgnyMMxUybtirm6nlaVrtAWl5AJ8QDjzWA&amp;oe=6A7181A0</image:loc>
+      <image:title>A High School Student Band - Lulu and Monica Interview</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/728213094_17893237548517524_40221732745483364_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=104&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=VQ06I_19ZOsQ7kNvwEWGZZg&amp;_nc_oc=AdqybRYF95JmC0YcCArs7DebAUH93Ns3UXv5uqy8gQkAdU0GcSRzd9OK2mFxpHi5Xow&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=wKS7my60Z70gc8xBeUK23Q&amp;_nc_ss=70689&amp;oh=00_AQE8hW-M-OGUOgnyMMxUybtirm6nlaVrtAWl5AJ8QDjzWA&amp;oe=6A7181A0</video:thumbnail_loc>
+      <video:title>A High School Student Band - Lulu and Monica Interview</video:title>
+      <video:description>@_monicalily @lulu.katsuki</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DZvbtO9PgS4/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-07-30T20:41:08.141Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/72cb6628-c8d1-4220-9466-9fa00d7d9eaf/mamdani-on-public-school-classroom-sizes/</loc>
     <lastmod>2026-05-17T04:31:19.069067+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/662873171_17881761840517524_1524409028913303830_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=108&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=nFPkBF4OvG8Q7kNvwGu0BFJ&amp;_nc_oc=AdoalWraHL_6LkY6hTR2ZsV4sGJoQhn2gZ1WxexNZ2Smkdp5GC26G5dePZTbeRy5tjQ&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=kPbvqZs3yn9z7dSB4ACAig&amp;_nc_ss=70689&amp;oh=00_Af45FeRtlkmXUNL9BjnhtouIc2zE57YLtC-S34G7_MP-Lw&amp;oe=6A0F108D</image:loc>
+      <image:title>Mamdani on Public School Classroom Sizes</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/662873171_17881761840517524_1524409028913303830_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=108&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=nFPkBF4OvG8Q7kNvwGu0BFJ&amp;_nc_oc=AdoalWraHL_6LkY6hTR2ZsV4sGJoQhn2gZ1WxexNZ2Smkdp5GC26G5dePZTbeRy5tjQ&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=kPbvqZs3yn9z7dSB4ACAig&amp;_nc_ss=70689&amp;oh=00_Af45FeRtlkmXUNL9BjnhtouIc2zE57YLtC-S34G7_MP-Lw&amp;oe=6A0F108D</video:thumbnail_loc>
+      <video:title>Mamdani on Public School Classroom Sizes</video:title>
+      <video:description>Watch Mamdani on Public School Classroom Sizes from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DW7G6o7tt9e/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-05-17T04:31:19.069Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/8815c6c6-3011-4c0e-9287-660d235f364f/tnn-at-the-2026-culture-fair/</loc>
     <lastmod>2026-05-15T12:38:49.05698+00:00</lastmod>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://scontent.cdninstagram.com/v/t51.82787-15/661683272_17881206291517524_6435639217322412264_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=106&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=-Wu9ijwQimwQ7kNvwHh2PXF&amp;_nc_oc=AdqwbuNJT3V9uyoJNCbDS1EkTiI5zR0T_95p4XnYAzIHNMuwqn7zkjoDRzvejA8FWK0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=pZJtTB9Xi7AcjumC1THypQ&amp;_nc_ss=70689&amp;oh=00_Af5dmSDEcG-Z6TlkEd9txrbctC-KqydjIxLqcwsgl6s8gw&amp;oe=6A082F75</image:loc>
+      <image:title>TNN at the 2026 Culture Fair!</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://scontent.cdninstagram.com/v/t51.82787-15/661683272_17881206291517524_6435639217322412264_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&amp;_nc_cat=106&amp;ccb=7-5&amp;_nc_sid=18de74&amp;efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&amp;_nc_ohc=-Wu9ijwQimwQ7kNvwHh2PXF&amp;_nc_oc=AdqwbuNJT3V9uyoJNCbDS1EkTiI5zR0T_95p4XnYAzIHNMuwqn7zkjoDRzvejA8FWK0&amp;_nc_zt=23&amp;_nc_ht=scontent.cdninstagram.com&amp;_nc_gid=pZJtTB9Xi7AcjumC1THypQ&amp;_nc_ss=70689&amp;oh=00_Af5dmSDEcG-Z6TlkEd9txrbctC-KqydjIxLqcwsgl6s8gw&amp;oe=6A082F75</video:thumbnail_loc>
+      <video:title>TNN at the 2026 Culture Fair!</video:title>
+      <video:description>Watch TNN at the 2026 Culture Fair! from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/p/DTtPi9RD0Ng/</video:content_loc>
+      
+      <video:duration>62</video:duration>
+      <video:publication_date>2026-05-05T18:50:06.028Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
   </url>
 </urlset>

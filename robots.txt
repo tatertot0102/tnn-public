@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /login
+Disallow: /newsroom
+Disallow: /cms
 
 Sitemap: https://bthstnn.org/sitemap.xml
