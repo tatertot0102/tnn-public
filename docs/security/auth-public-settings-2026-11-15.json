@@ -1,0 +1,5 @@
+{
+  "disable_signup": true,
+  "mailer_autoconfirm": true,
+  "phone_autoconfirm": false
+}
