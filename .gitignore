@@ -14,3 +14,7 @@ supabase/.branches/
 /public/rss.xml
 /public/sitemap.xml
 /public/robots.txt
+
+/build/
+/.react-router/
+/.vercel/
