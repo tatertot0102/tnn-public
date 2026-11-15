@@ -1,6 +1,6 @@
 {
   "old_route_indexes": 45,
-  "new_route_indexes": 52,
+  "new_route_indexes": 53,
   "missing_old_routes": [],
   "new_routes": [
     "staff/aurora-vonbusch/index.html",
@@ -8,6 +8,7 @@
     "staff/haley-feng/index.html",
     "videos/story/0acfff16-f72e-49a9-b2ff-04afebad546c/meet-butters-techs-therapy-dog/index.html",
     "videos/story/0e8f214c-eb46-4dec-8031-654a6d3580f3/respect-for-all-at-brooklyn-tech/index.html",
+    "videos/story/bf62c27a-fd91-4f89-9801-b64d2f0c976e/11-14-shsat-canceled/index.html",
     "videos/story/bf62c27a-fd91-4f89-9801-b64d2f0c976e/11-14-shsat-postponed/index.html",
     "videos/story/f4b128da-673d-47a5-b05a-eb0e24038624/joining-americas-largest-public-high-school/index.html"
   ],
@@ -17,5 +18,6 @@
   "vite_base": "default root /, unchanged",
   "current_bundle_aliases_preserved": [
     "assets/index-CbdbyIif.js"
-  ]
+  ],
+  "legacy_shsat_alias_preserved": true
 }
