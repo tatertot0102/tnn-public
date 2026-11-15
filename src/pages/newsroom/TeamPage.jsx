@@ -5,7 +5,7 @@ import AdminLayout from '../../components/admin/AdminLayout'
 import { Spinner, Modal, Field } from '../../components/ui'
 import { ArrowUpDown, Eye, EyeOff, ImageOff, Mail, Upload, UserRound } from 'lucide-react'
 
-const ROLES = ['admin', 'exec', 'member', 'alumni']
+const ROLES = ['admin', 'exec', 'exec-roles', 'member']
 const HEADSHOT_BUCKET = 'staff-headshots'
 const PUBLIC_ROLES = [
   { value: 'exec', label: 'Executive', color: '#60a5fa' },
@@ -96,13 +96,13 @@ async function prepareHeadshot(file) {
 }
 
 export default function TeamPage() {
-  const { profile } = useAuth()
-  const isExec = profile?.role === 'exec'
+  const { profile, isAdmin } = useAuth()
+  const isExec = profile?.role === 'exec' || isAdmin
   const [members, setMembers] = useState([])
   const [loading, setLoading] = useState(true)
   const [inviteOpen, setInviteOpen] = useState(false)
   const [inviteEmail, setInviteEmail] = useState('')
-  const [inviteRole, setInviteRole] = useState('member')
+  const [inviteName, setInviteName] = useState('')
   const [saving, setSaving] = useState(false)
   const [msg, setMsg] = useState('')
   const [loadWarning, setLoadWarning] = useState('')
@@ -147,7 +147,7 @@ export default function TeamPage() {
   }
 
   async function updateRole(id, role) {
-    if (!isExec) return
+    if (!isAdmin) return
     await updateProfile(id, { role })
   }
 
@@ -164,15 +164,21 @@ export default function TeamPage() {
   }
 
   async function sendInvite() {
-    if (!isExec) return
-    if (!inviteEmail.trim()) return
+    if (!isExec || !inviteEmail.trim() || !inviteName.trim()) return
     setSaving(true)
-    const { error } = await supabase.auth.admin.inviteUserByEmail(inviteEmail.trim())
-    setSaving(false)
-    if (error) setMsg(`Error: ${error.message}`)
-    else {
-      setMsg('Invite sent!')
+    setMsg('')
+    try {
+      const { data, error } = await supabase.functions.invoke('invite-staff', {
+        body: { email: inviteEmail.trim(), full_name: inviteName.trim() },
+      })
+      if (error || data?.error) throw new Error(data?.error || 'Invitation could not be sent. Check the invitation service and try again.')
+      setMsg('Invite sent! New staff join as members.')
       setInviteEmail('')
+      setInviteName('')
+    } catch (error) {
+      setMsg(`Error: ${error.message}`)
+    } finally {
+      setSaving(false)
     }
   }
 
@@ -271,6 +277,7 @@ export default function TeamPage() {
                 role={role}
                 members={groupedMembers[role.value] || []}
                 isExec={isExec}
+                isAdmin={isAdmin}
                 updateProfile={updateProfile}
                 updateRole={updateRole}
                 updateSocial={updateSocial}
@@ -284,6 +291,7 @@ export default function TeamPage() {
                 role={{ value: 'hidden', label: 'Hidden from Public Site', color: '#64748b' }}
                 members={hiddenMembers}
                 isExec={isExec}
+                isAdmin={isAdmin}
                 updateProfile={updateProfile}
                 updateRole={updateRole}
                 updateSocial={updateSocial}
@@ -301,11 +309,11 @@ export default function TeamPage() {
           <input className="adm-input" autoFocus type="email" value={inviteEmail}
             onChange={event => setInviteEmail(event.target.value)} placeholder="name@school.edu" />
         </Field>
-        <Field label="Sign-in Role">
-          <select className="adm-input" value={inviteRole} onChange={event => setInviteRole(event.target.value)}>
-            {ROLES.map(role => <option key={role} value={role}>{role}</option>)}
-          </select>
+        <Field label="Full name *">
+          <input className="adm-input" value={inviteName} maxLength={100}
+            onChange={event => setInviteName(event.target.value)} placeholder="Full name" />
         </Field>
+        <p className="adm-info-box">New staff join as members. An administrator can change sign-in roles afterward.</p>
         {msg && (
           <div className={msg.startsWith('Error') ? 'adm-error-box' : 'adm-info-box'}>
             {msg}
@@ -313,7 +321,7 @@ export default function TeamPage() {
         )}
         <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10, marginTop: 8 }}>
           <button onClick={() => { setInviteOpen(false); setMsg('') }} className="adm-btn">Cancel</button>
-          <button onClick={sendInvite} className="adm-btn primary" disabled={saving || !inviteEmail.trim()}>
+          <button onClick={sendInvite} className="adm-btn primary" disabled={saving || !inviteEmail.trim() || !inviteName.trim()}>
             {saving && <Spinner size={4} />} Send Invite
           </button>
         </div>
@@ -322,7 +330,7 @@ export default function TeamPage() {
   )
 }
 
-function ProfileGroup({ role, members, isExec, updateProfile, updateRole, updateSocial, uploadHeadshot, headshotUploading, hidden = false }) {
+function ProfileGroup({ role, members, isExec, isAdmin, updateProfile, updateRole, updateSocial, uploadHeadshot, headshotUploading, hidden = false }) {
   return (
     <section className="profile-cms-group">
       <div className="profile-cms-group-head">
@@ -347,6 +355,7 @@ function ProfileGroup({ role, members, isExec, updateProfile, updateRole, update
               member={member}
               groupColor={role.color}
               isExec={isExec}
+                isAdmin={isAdmin}
               updateProfile={updateProfile}
               updateRole={updateRole}
               updateSocial={updateSocial}
@@ -360,7 +369,7 @@ function ProfileGroup({ role, members, isExec, updateProfile, updateRole, update
   )
 }
 
-function ProfileCard({ member, groupColor, isExec, updateProfile, updateRole, updateSocial, uploadHeadshot, headshotUploading }) {
+function ProfileCard({ member, groupColor, isExec, isAdmin, updateProfile, updateRole, updateSocial, uploadHeadshot, headshotUploading }) {
   const publicRole = defaultPublicRole(member)
 
   return (
@@ -422,7 +431,7 @@ function ProfileCard({ member, groupColor, isExec, updateProfile, updateRole, up
 
           <label>
             <span>Sign-in role</span>
-            <select className="adm-input" value={member.role || 'member'} onChange={event => updateRole(member.id, event.target.value)}>
+            <select className="adm-input" disabled={!isAdmin} title={isAdmin ? undefined : 'Only administrators can change sign-in roles'} value={member.role || 'member'} onChange={event => updateRole(member.id, event.target.value)}>
               {ROLES.map(role => <option key={role} value={role}>{role}</option>)}
             </select>
           </label>

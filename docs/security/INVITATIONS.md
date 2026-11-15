@@ -26,3 +26,9 @@ node scripts/test-security-proposal.mjs /absolute/path/to/@electric-sql/pglite/d
 ```
 
 Deployment, redirect allowlisting, actual invitations and SQL application remain approval-gated. The exact proposed SQL is docs/security/proposals/001-security.up.sql with 001-security.down.sql as rollback. Rolling back restores the pre-existing vulnerabilities.
+
+## Client integration continuation
+
+The recovered public CMS Team page now calls invite-staff with email/full_name and never supplies a role. Execs/admins can invite; only admins can edit sign-in roles in the UI. The live profiles role constraint was used to replace the invalid alumni option with exec-roles. The server role guard remains the actual enforcement and must be reviewed/applied with the UI rollout; hiding/disabling a control is not authorization.
+
+A source-observed onboarding destination is `https://bthstnn.org/login/?recovery=1`: the recovered login form explicitly uses this query to show password setup, and Supabase's invite link supplies the session. Set this server-owned redirect only after owner approval/allowlisting. {{TODO: verify real invite acceptance/session exchange in disposable Supabase before production invitations}}. This is not an assertion about which CMS the staff currently uses.
