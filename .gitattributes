@@ -1,0 +1,2 @@
+# Preserve the exact live pg_dump bytes, including its generated whitespace.
+docs/security/live-schema-full-2026-11-15.sql -whitespace
