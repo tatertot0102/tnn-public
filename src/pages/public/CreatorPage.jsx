@@ -11,7 +11,7 @@ import { thumbnailForVideo } from '../../lib/constants'
 
 const PROFILE_ROLE_LABELS = {
   exec: 'Executive',
-  associate: 'Associate',
+  associate: 'Junior Executive',
   member: 'Member',
   admin: 'Administrator',
   reporter: 'Reporter',

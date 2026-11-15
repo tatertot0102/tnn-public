@@ -218,9 +218,9 @@ ${entries.map(entry => `  <url>
 }
 
 function buildRss({ videos }) {
-  const items = videos.slice(0, 30).map(video => {
+  const items = videos.map(video => {
     const pubDate = video.scheduled_at || video.created_at || new Date().toISOString()
-    const link = video.href || routeUrl('/videos')
+    const link = routeUrl(`/videos/story/${video.id}/${videoSlug(video.title)}`)
     return `    <item>
       <title>${escapeXml(video.title)}</title>
       <link>${escapeXml(link)}</link>
@@ -231,9 +231,10 @@ function buildRss({ videos }) {
   }).join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech News Network Videos</title>
+    <atom:link href="${escapeXml(`${SITE_URL}/rss.xml`)}" rel="self" type="application/rss+xml" />
     <link>${escapeXml(SITE_URL)}</link>
     <description>Student-produced video journalism from Tech News Network at Brooklyn Tech.</description>
     <language>en-us</language>

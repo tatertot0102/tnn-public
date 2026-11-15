@@ -54,3 +54,17 @@ VideoCMS snapshot ends mid-component and has 1,019 lines after replay despite it
 AuthContext, ProtectedRoute, LoginPage, AdminLayout, CSS, assets, routing and SEO parity have NOT been recovered or verified here; unchanged from main does not imply matching the live bundle. {{TODO: B2–B5 with per-page screenshots at 390/768/1440, build/route/prerender/sitemap/base-path/asset diff, and B3 auth behavior audit}}. No B6 merge is approved.
 
 The source preservation branch contains no deploy workflow. Pushing recovered-sep27 preserves B1 only; it does not push gh-pages, merge main, or authorize a production deployment.
+
+## B2 continuation — complete bundle-derived application declarations
+
+The B1 commit c8d3acb is preserved. Its six source snapshots remain the starting point; InfoPage/TeamPage now also include the directly observed Nov 8 Junior Executive terminology, and AutoThumbnail includes the width/height defaults observed in the deployed bundle. The latter was necessary to match the deployed story layout.
+
+`scripts/recover-live-bundle.cjs` parses the exact deployed assets/index-CbdbyIif.js from gh-pages 7155a07 without executing it, follows application declaration dependencies, maps React/Router/Supabase/Lucide imports back to installed libraries, and emits src/recovered/live-module.jsx. No vendor implementation or hard-coded Supabase key is copied. Original compiled identifier names and JSX runtime calls are retained; this is maintainable parsed code evidence, not guessed original source. Generated code is classified **reconstructed from bundle**, including the complete VideoCMS tail and auth behavior. The reusable source generator and input hash allow reproduction.
+
+App, AuthContext, ProtectedRoute, AdminLayout, PublicLayout, LoginPage, HomePage, VideosPage, StoryPage, DashboardPage and VideoCMSPage are reconstructed facades to this module. CreatorPage, constants and creators retain B1 recovery/replayed patches. Unchanged unused legacy source files remain unchanged from main. The full active VideoCMS function is now present; the first-980-lines file remains an archival partial snapshot.
+
+Global CSS is the exact live CSS referenced by the preserved index.html, not reconstructed styles. ASSETS.json contains hashes for the exact CSS and eight copied public/partner/image assets. The source generator verifies a stable bundle hash. Auth details and ambiguities are in AUTH-BEHAVIOR.md.
+
+{{TODO: final B5 verification report, all-route screenshots and build/route/asset diff; B6 owner approval before merge}}. No recovery or screenshot evidence authorizes deployment.
+
+Final B5 pass also restored the deployed VideoCard through a generated facade and the observed Junior Executive label in CreatorPage. These are bundle-derived changes after B1, not claims that the Sep 27 snapshot contained Nov 8 changes. See B5-REPORT.md and VERIFICATION.json for the final 61-route matrix and acceptance limits.

@@ -8,3 +8,9 @@ dist/
 .claude/
 supabase/.temp/
 supabase/.branches/
+
+# Local dependency link and build-generated SEO artifacts.
+/node_modules
+/public/rss.xml
+/public/sitemap.xml
+/public/robots.txt
