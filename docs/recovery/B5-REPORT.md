@@ -18,7 +18,7 @@ A separate fresh, unmocked Chrome visit to production returned 200 for videos/pu
 
 - Clean npm ci and full npm run build passed in an isolated copy with a local read-only snapshot, verifying the repaired lockfile. The clean dependency directory was removed afterward to reclaim task-created disk usage; logs remain.
 - Full npm run build also passed against actual public Supabase reads, producing 21 story prerenders, 21 staff prerenders, a 21-item RSS feed and sitemap. No database writes occurred.
-- All 45 old deployed route indexes remain present; seven newly published story/staff indexes appear, for 52 total. BUILD-DIFF.json lists them. Every sitemap route has a generated index. Root base path in vite.config.js remains unchanged and verified by the output paths.
+- All 45 old deployed route indexes remain present; seven newly published story/staff indexes plus the SHSAT legacy alias appear, for 53 total. BUILD-DIFF.json lists them. Every sitemap route has a generated index. Root base path in vite.config.js remains unchanged and verified by the output paths.
 - Existing/current JS/CSS asset aliases are retained so cached HTML continues to load. Public partner/logo assets and exact CSS are hash-recorded.
 - RSS links now target TNN story pages, include all published rows without a 30-item cap, and declare atom:self. XML parses; every item link is on bthstnn.org.
 - Build fetch failures now fail instead of silently generating an empty feed/sitemap. CI explicitly refuses local snapshot builds. Both failure modes were tested with mocked reads.
