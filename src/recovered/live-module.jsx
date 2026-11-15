@@ -10,7 +10,9 @@ import Gx from '../pages/public/InfoPage'
 import jh from '../pages/public/CreatorPage'
 import Fh from '../pages/newsroom/TeamPage'
 import { AutoThumbnail as Kn } from '../components/public/AutoThumbnail'
-import { X as Mr, Menu as sx, Search as Fm, Flame as Xb, Sparkles as lx, Info as dc, CirclePlay as cc, ArrowRight as Ft, BarChart2 as Kb, ArrowLeft as ru, ExternalLink as zn, UserRound as Wm, ChevronRight as Gb, ChevronLeft as Jb, LayoutDashboard as tx, Layers as Bm, Users as dx, Globe as Zb, LogOut as rx, Plus as su, Film as Mm, RadioTower as ox, CloudUpload as Yb, Link2 as vh, CircleCheck as Qb, ImageDown as yh, EyeOff as Um, Eye as Dm, Pencil as ax, Trash2 as ux, Upload as Hm } from 'lucide-react'
+import { X as Mr, Menu as sx, Search as Fm, Flame as Xb, Sparkles as lx, Info as dc, CirclePlay as cc, ArrowRight as Ft, BarChart2 as Kb, ArrowLeft as ru, ExternalLink as zn, UserRound as Wm, ChevronRight as Gb, ChevronLeft as Jb, LayoutDashboard as tx, Layers as Bm, Users as dx, Globe as Zb, LogOut as rx, Plus as su, Film as Mm, RadioTower as ox, CloudUpload as Yb, Link2 as vh, CircleCheck as Qb, ImageDown as yh, EyeOff as Um, Eye as Dm, Pencil as ax, Trash2 as ux, Upload as Hm, Youtube as Yt, Instagram as Ig, Link as LinkIcon, Mail as MailIcon, Share2 as ShareIcon } from 'lucide-react'
+import { NAV_SECTIONS, sectionLabel as siteSectionLabel, pickHero, recentBreaking, publishedTime, formatPublished, relativeTime, PRESS_MENTIONS } from '../lib/site'
+import { JoinPage, PressPage } from '../pages/public/SitePages'
 const Lm = x.createContext(null);
 
 function Fb({
@@ -104,7 +106,7 @@ const zr = [{
   label: "Breaking"
 }, {
   value: "docs",
-  label: "Docs"
+  label: "Documentaries"
 }, {
   value: "opinion",
   label: "Opinion"
@@ -503,28 +505,7 @@ const _h = "https://www.instagram.com/tnn_bths/";
 
 const zo = "https://docs.google.com/forms/d/e/1FAIpQLSdRQMvmPiVj1bT_l-Nh0IaplpyygUQgfHKp90AErUf2gKIqcQ/viewform?usp=header";
 
-const bh = [{
-  label: "Hard News",
-  slug: "hardnews"
-}, {
-  label: "Features",
-  slug: "features"
-}, {
-  label: "Breaking",
-  slug: "breaking"
-}, {
-  label: "Docs",
-  slug: "docs"
-}, {
-  label: "Weather",
-  slug: "weather"
-}, {
-  label: "Sports",
-  slug: "sports"
-}, {
-  label: "Promo",
-  slug: "promo"
-}];
+const bh = NAV_SECTIONS;
 
 const wx = 150;
 
@@ -584,7 +565,7 @@ function Br({
             year: "numeric"
           })
         }), o.jsx("span", {
-          children: "Tech News Network"
+          children: "Brooklyn Tech's student video newsroom"
         }), o.jsxs("div", {
           className: "public-kicker-links",
           children: [o.jsx("a", {
@@ -627,10 +608,8 @@ function Br({
           }), o.jsx(Q, {
             to: "/about/",
             children: "About"
-          }), o.jsx("a", {
-            href: zo,
-            target: "_blank",
-            rel: "noopener noreferrer",
+          }), o.jsx(Q, {
+            to: "/join/",
             children: "Join"
           })]
         }), o.jsx(Q, {
@@ -673,7 +652,13 @@ function Br({
             href: Mo,
             target: "_blank",
             rel: "noopener noreferrer",
-            children: "Subscribe"
+            "aria-label": "Subscribe to TNN on YouTube",
+            children: [o.jsx(Yt, {
+              size: 16,
+              "aria-hidden": "true"
+            }), o.jsx("span", {
+              children: "Subscribe on YouTube"
+            })]
           })]
         })]
       }), o.jsxs("nav", {
@@ -690,10 +675,8 @@ function Br({
             className: "pub-nav-link mobile-primary",
             onClick: y,
             children: "About"
-          }), o.jsx("a", {
-            href: zo,
-            target: "_blank",
-            rel: "noopener noreferrer",
+          }), o.jsx(Q, {
+            to: "/join/",
             className: "pub-nav-link mobile-primary",
             onClick: y,
             children: "Join"
@@ -761,10 +744,8 @@ function Br({
               target: "_blank",
               rel: "noopener noreferrer",
               children: "Instagram"
-            }), o.jsx("a", {
-              href: zo,
-              target: "_blank",
-              rel: "noopener noreferrer",
+            }), o.jsx(Q, {
+              to: "/join/",
               children: "Join TNN"
             }), o.jsx("a", {
               href: "/rss.xml",
@@ -776,6 +757,15 @@ function Br({
             }), o.jsx(Q, {
               to: "/about/",
               children: "About"
+            }), o.jsx(Q, {
+              to: "/about/#staff",
+              children: "Masthead"
+            }), o.jsx(Q, {
+              to: "/press/",
+              children: "TNN in the News"
+            }), o.jsx(Q, {
+              to: "/videos/promo/",
+              children: "From TNN"
             }), o.jsx(Q, {
               to: "/login/",
               children: "Staff Sign In"
@@ -1004,30 +994,13 @@ const Px = {
   breaking: "Breaking",
   docs: "Documentaries",
   opinion: "Opinion",
+  weather: "Weather",
   sports: "Sports",
-  promo: "Promo",
+  promo: "From TNN",
   catalog: "Catalog"
 };
 
-const Rx = [{
-  label: "Breaking",
-  slug: "breaking"
-}, {
-  label: "Hard News",
-  slug: "hardnews"
-}, {
-  label: "Features",
-  slug: "features"
-}, {
-  label: "Documentaries",
-  slug: "docs"
-}, {
-  label: "Sports",
-  slug: "sports"
-}, {
-  label: "Opinion",
-  slug: "opinion"
-}];
+const Rx = NAV_SECTIONS;
 
 function gc(e) {
   return Px[e] || e || "Video";
@@ -1064,9 +1037,9 @@ function Ax() {
           ascending: !1
         }),
         S = (await Fr(b.data || [])).filter(Ca),
-        E = S.find(G => We(G, "hero")) || S[0],
+        E = pickHero(S).video,
         N = S.filter(G => We(G, "trending")).slice(0, 10),
-        j = S.filter(G => We(G, "breaking-panel")).slice(0, 4),
+        j = recentBreaking(S),
         $ = S.filter(G => We(G, "homepage-catalog")).slice(0, 4),
         U = new Set([E == null ? void 0 : E.id, ...N.map(G => G.id), ...j.map(G => G.id), ...$.map(G => G.id)].filter(Boolean)),
         F = S.filter(G => !U.has(G.id)).sort(gx).slice(0, 8);
@@ -1103,8 +1076,12 @@ function Ax() {
       }), o.jsx("div", {
         className: "breaking-track",
         children: o.jsx("div", {
-          children: y.map(m => o.jsxs("span", {
-            children: ["• ", m.title]
+          children: y.map(m => o.jsxs(Q, {
+            to: Bn(m),
+            children: ["• ", m.title, " ", o.jsxs("small", {
+              className: "breaking-time",
+              children: ["Updated ", relativeTime(publishedTime(m))]
+            })]
           }, m.id))
         })
       })]
@@ -1125,7 +1102,7 @@ function Ax() {
           className: "impact-kicker",
           children: [o.jsx(lx, {
             size: 15
-          }), "Highlight"]
+          }), e && e.section === "breaking" ? "Breaking" : "Top Story"]
         }), e ? o.jsxs("div", {
           className: "impact-hero-link",
           children: [o.jsx("h1", {
@@ -1162,20 +1139,17 @@ function Ax() {
       })]
     }), v.length > 0 && o.jsxs("section", {
       className: "trending-strip",
-      "aria-label": "Trending videos",
+      "aria-labelledby": "editors-picks-title",
       children: [o.jsxs("div", {
         className: "trend-head",
         children: [o.jsx("h2", {
-          children: "Trending Leaderboard"
-        }), o.jsxs("span", {
-          children: ["Top ", v.length, " Public Videos"]
+          id: "editors-picks-title",
+          children: a.length ? "Editors' Picks" : "Latest Stories"
+        }), o.jsx("span", {
+          children: a.length ? "Chosen by TNN editors" : "Newest from the newsroom"
         })]
-      }), o.jsx("div", {
-        className: "trend-scroll",
-        children: v.map((m, b) => o.jsx(Ix, {
-          video: m,
-          rank: b + 1
-        }, m.id))
+      }), o.jsx(PicksRail, {
+        videos: v
       })]
     }), o.jsxs("section", {
       className: "category-band",
@@ -1185,8 +1159,6 @@ function Ax() {
           children: "Explore"
         }), o.jsx("h2", {
           children: "Stories by section"
-        }), o.jsx("p", {
-          children: "Quick paths into the public video catalog, without exposing internal newsroom tools."
         })]
       }), o.jsx("div", {
         className: "category-chips",
@@ -1204,11 +1176,7 @@ function Ax() {
         className: "catalog-title-row",
         children: [o.jsxs("div", {
           children: [o.jsx("h2", {
-            children: "Catalog"
-          }), o.jsxs("p", {
-            children: [o.jsx(Kb, {
-              size: 15
-            }), "Showing 4 featured catalog videos"]
+            children: "Featured"
           })]
         }), o.jsxs(Q, {
           to: "/videos/",
@@ -1231,56 +1199,8 @@ function Ax() {
             children: "More public videos will appear here."
           })
         })]
-      }), f.length > 0 && o.jsx("div", {
-        className: "mosaic-small-grid",
-        children: f.map(m => o.jsx(Bo, {
-          video: m,
-          small: !0
-        }, m.id))
       })]
-    }), o.jsx("section", {
-      className: "home-info",
-      "aria-label": "TNN information",
-      children: [{
-        label: "Watch",
-        title: "Latest Videos",
-        body: "Watch recent reporting, features, interviews, and school stories from Brooklyn Tech's student journalists.",
-        link: "Browse videos",
-        to: "/videos/"
-      }, {
-        label: "News",
-        title: "Hard News",
-        body: "Campus updates and reported pieces from the student newsroom.",
-        link: "Watch hard news",
-        to: "/videos/hardnews/"
-      }, {
-        label: "Culture",
-        title: "Features",
-        body: "Profiles, explainers, and student-life stories from around the building.",
-        link: "See features",
-        to: "/videos/features/"
-      }].map(({
-        label: m,
-        title: b,
-        body: S,
-        link: E,
-        to: N
-      }) => o.jsxs("article", {
-        className: "home-info-item",
-        children: [o.jsx("span", {
-          children: m
-        }), o.jsx("h2", {
-          children: b
-        }), o.jsx("p", {
-          children: S
-        }), o.jsxs(Q, {
-          to: N,
-          children: [E, " ", o.jsx(Ft, {
-            size: 13
-          })]
-        })]
-      }, m))
-    })]
+    }), o.jsx(HomeClosing, {})]
   });
 }
 
@@ -1371,6 +1291,144 @@ function Pa({
   });
 }
 
+function PlatformIcon({
+  href: e
+}) {
+  const t = ni(e);
+  if (!t) return null;
+  const n = t === "Instagram" ? Ig : t === "YouTube" ? Yt : zn;
+  return o.jsxs("span", {
+    className: "platform-icon",
+    title: `On ${t}`,
+    children: [o.jsx(n, {
+      size: 13,
+      "aria-hidden": "true"
+    }), o.jsx("span", {
+      className: "sr-only",
+      children: t
+    })]
+  });
+}
+
+function PicksRail({
+  videos: e
+}) {
+  const t = x.useRef(null),
+    [n, r] = x.useState({
+      start: !0,
+      end: !1
+    });
+  const s = x.useCallback(() => {
+    const a = t.current;
+    a && r({
+      start: a.scrollLeft <= 4,
+      end: a.scrollLeft + a.clientWidth >= a.scrollWidth - 4
+    });
+  }, []);
+  x.useEffect(() => {
+    s();
+    const a = t.current;
+    if (!a) return;
+    a.addEventListener("scroll", s, {
+      passive: !0
+    });
+    window.addEventListener("resize", s);
+    return () => {
+      a.removeEventListener("scroll", s), window.removeEventListener("resize", s);
+    };
+  }, [s, e.length]);
+  function i(a) {
+    const l = t.current;
+    if (!l) return;
+    const u = l.querySelector(".trend-card"),
+      c = u ? u.getBoundingClientRect().width + 16 : l.clientWidth * .8;
+    l.scrollBy({
+      left: a * c,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+    });
+  }
+  return o.jsxs("div", {
+    className: `picks-rail ${n.start ? "at-start" : ""} ${n.end ? "at-end" : ""}`,
+    children: [o.jsx("button", {
+      type: "button",
+      className: "picks-nav prev",
+      onClick: () => i(-1),
+      disabled: n.start,
+      "aria-label": "Previous stories",
+      children: o.jsx(Jb, {
+        size: 20,
+        "aria-hidden": "true"
+      })
+    }), o.jsx("div", {
+      ref: t,
+      className: "trend-scroll",
+      tabIndex: 0,
+      role: "region",
+      "aria-label": "Editors' picks, scroll horizontally",
+      onKeyDown: a => {
+        a.key === "ArrowRight" ? (a.preventDefault(), i(1)) : a.key === "ArrowLeft" && (a.preventDefault(), i(-1));
+      },
+      children: e.map((a, l) => o.jsx(Ix, {
+        video: a,
+        rank: l + 1
+      }, a.id))
+    }), o.jsx("button", {
+      type: "button",
+      className: "picks-nav next",
+      onClick: () => i(1),
+      disabled: n.end,
+      "aria-label": "Next stories",
+      children: o.jsx(Gb, {
+        size: 20,
+        "aria-hidden": "true"
+      })
+    })]
+  });
+}
+
+function HomeClosing() {
+  return o.jsxs("section", {
+    className: "home-closing",
+    "aria-label": "More from TNN",
+    children: [o.jsxs("div", {
+      className: "home-press",
+      children: [o.jsx("span", {
+        children: "TNN in the news"
+      }), PRESS_MENTIONS.slice(0, 3).map(e => o.jsxs("a", {
+        href: e.url,
+        target: "_blank",
+        rel: "noopener noreferrer",
+        children: [o.jsx("strong", {
+          children: e.outlet
+        }), o.jsx("span", {
+          children: e.title
+        })]
+      }, e.url)), o.jsxs(Q, {
+        to: "/press/",
+        className: "home-closing-link",
+        children: ["All coverage ", o.jsx(Ft, {
+          size: 13
+        })]
+      })]
+    }), o.jsxs("div", {
+      className: "home-join",
+      children: [o.jsx("span", {
+        children: "Join TNN"
+      }), o.jsx("h2", {
+        children: "Want to report, film, or edit?"
+      }), o.jsx("p", {
+        children: "TNN is run by Brooklyn Tech students. Find out how to get involved."
+      }), o.jsxs(Q, {
+        to: "/join/",
+        className: "home-closing-link",
+        children: ["How to join ", o.jsx(Ft, {
+          size: 13
+        })]
+      })]
+    })]
+  });
+}
+
 function Ix({
   video: e,
   rank: t
@@ -1401,7 +1459,10 @@ function Ix({
           children: e.title
         })
       }), o.jsxs("small", {
-        children: [ni(e.href) || "Video", e.runtime ? ` • ${e.runtime}` : ""]
+        className: "trend-card-meta",
+        children: [o.jsx(PlatformIcon, {
+          href: e.href
+        }), e.runtime || formatPublished(e)]
       }), o.jsx(eg, {
         video: e,
         tone: "dark"
@@ -1433,7 +1494,9 @@ function Bo({
         className: "feature-tile-overlay"
       }), r && o.jsx("span", {
         className: "feature-platform",
-        children: r
+        children: o.jsx(PlatformIcon, {
+          href: e.href
+        })
       }), o.jsxs("div", {
         className: "feature-tile-copy",
         children: [o.jsx("span", {
@@ -1707,19 +1770,20 @@ function $x() {
   });
 }
 
-const Ux = ["All Videos", "YouTube", "Instagram", "Most Recent"];
+const Ux = ["Featured order", "Most Recent"];
 
 function Sh() {
   var g;
   const {
-      section: e
+      section: sectionParam
     } = ac(),
     [t] = oc(),
+    e = sectionParam || t.get("section") || void 0,
     n = Xt(),
     r = t.get("q") || "",
     [s, i] = x.useState([]),
     [a, l] = x.useState(!0),
-    [u, c] = x.useState("All Videos"),
+    [u, c] = x.useState(t.get("sort") === "recent" ? "Most Recent" : "Featured order"),
     [d, h] = x.useState(r);
   x.useEffect(() => {
     async function f() {
@@ -1737,8 +1801,8 @@ function Sh() {
   }, [e]), x.useEffect(() => {
     h(r);
   }, [r]);
-  const p = e ? ((g = zr.find(f => f.value === e)) == null ? void 0 : g.label) || e : null,
-    y = r ? `Search "${r}" | TNN Videos` : p ? `${p} Videos | TNN` : "All Videos | TNN",
+  const p = e ? siteSectionLabel(e) : null,
+    y = r ? `Search "${r}" | Tech News Network (TNN) — Brooklyn Tech` : p ? `${p} | Tech News Network (TNN) — Brooklyn Tech` : "All Videos | Tech News Network (TNN) — Brooklyn Tech",
     v = r ? `Search Tech News Network videos for ${r}. Watch student-produced video journalism from Brooklyn Tech.` : p ? `Watch ${p.toLowerCase()} videos from Tech News Network, Brooklyn Tech's student-run newsroom.` : "Browse all public videos from Tech News Network, Brooklyn Tech's student-run newsroom.";
   ri({
     title: y,
@@ -1774,10 +1838,7 @@ function Sh() {
     if (!r) return !0;
     const m = r.toLowerCase();
     return [f.title, f.dek, f.byline, f.date, f.runtime, ni(f.href), (S = zr.find(E => E.value === f.section)) == null ? void 0 : S.label, ...Jt(f).flatMap(E => [E.name, E.role, ...(E.roles || [])])].filter(Boolean).join(" ").toLowerCase().includes(m);
-  }).filter(f => {
-    var m, b, S;
-    return u === "YouTube" ? ((m = f.href) == null ? void 0 : m.includes("youtube")) || ((b = f.href) == null ? void 0 : b.includes("youtu.be")) : u === "Instagram" ? (S = f.href) == null ? void 0 : S.includes("instagram") : !0;
-  }).sort((f, m) => u === "Most Recent" ? yx(f, m) : 0);
+  }).sort((f, m) => u === "Most Recent" ? publishedTime(m) - publishedTime(f) : 0);
   function k(f) {
     f.preventDefault();
     const m = d.trim(),
@@ -1831,33 +1892,54 @@ function Sh() {
           })]
         })]
       })
-    }), o.jsxs("div", {
-      style: {
-        borderBottom: "1px solid var(--pub-border)",
-        padding: "12px 24px",
-        display: "flex",
-        gap: 8,
-        alignItems: "center",
-        overflowX: "auto",
-        scrollbarWidth: "none",
-        background: "var(--pub-bg)"
-      },
-      children: [Ux.map(f => o.jsx("button", {
-        onClick: () => c(f),
-        className: `pub-chip ${u === f ? "active" : ""}`,
-        children: f
-      }, f)), o.jsx("div", {
-        style: {
-          flex: 1
-        }
-      }), o.jsxs("span", {
-        style: {
-          fontSize: 11,
-          color: "var(--pub-muted)",
-          flexShrink: 0
-        },
-        children: [_.length, " video", _.length !== 1 ? "s" : ""]
-      })]
+    }), o.jsx("div", {
+      className: "videos-filter-bar",
+      children: o.jsxs("div", {
+        className: "videos-filter-inner",
+        children: [o.jsxs("nav", {
+          className: "videos-section-chips",
+          "aria-label": "Filter by section",
+          children: [o.jsx(xa, {
+            to: "/videos/",
+            end: !0,
+            className: ({
+              isActive: f
+            }) => `pub-chip ${f ? "active" : ""}`,
+            children: "All"
+          }), NAV_SECTIONS.map(f => o.jsx(xa, {
+            to: `/videos/${f.slug}/`,
+            className: ({
+              isActive: m
+            }) => `pub-chip ${m ? "active" : ""}`,
+            children: f.label
+          }, f.slug))]
+        }), o.jsxs("label", {
+          className: "videos-sort",
+          children: [o.jsx("span", {
+            children: "Sort"
+          }), o.jsx("select", {
+            value: u,
+            onChange: f => {
+              const m = f.target.value;
+              c(m);
+              const b = new URLSearchParams(t);
+              m === "Most Recent" ? b.set("sort", "recent") : b.delete("sort");
+              const S = b.toString();
+              n(`${e ? `/videos/${e}/` : "/videos/"}${S ? `?${S}` : ""}`, {
+                replace: !0
+              });
+            },
+            children: Ux.map(f => o.jsx("option", {
+              value: f,
+              children: f
+            }, f))
+          })]
+        }), o.jsxs("span", {
+          className: "videos-count",
+          "aria-live": "polite",
+          children: [_.length, " video", _.length !== 1 ? "s" : ""]
+        })]
+      })
     }), o.jsx("div", {
       style: {
         maxWidth: 1180,
@@ -1918,6 +2000,123 @@ function Qx(e = "") {
   return (t == null ? void 0 : t[1]) || "";
 }
 
+function instagramEmbedUrl(e = "") {
+  const t = e.match(/instagram\.com\/(reels?|p|tv)\/([A-Za-z0-9_-]+)/);
+  if (!t) return "";
+  return `https://www.instagram.com/${t[1] === "reels" ? "reel" : t[1]}/${t[2]}/embed/`;
+}
+
+function StoryPlayer({
+  video: e,
+  youtubeId: t
+}) {
+  const [n, r] = x.useState(!1),
+    s = instagramEmbedUrl(e.href),
+    i = /youtube\.com\/shorts\//.test(e.href || ""),
+    a = s || i,
+    l = t ? `https://www.youtube-nocookie.com/embed/${t}?autoplay=1` : s;
+  if (!l) return o.jsxs("a", {
+    href: e.href,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "story-thumbnail-link",
+    children: [o.jsx(Kn, {
+      video: e,
+      alt: e.thumbnail_alt || "",
+      fallback: o.jsx("div", {
+        className: "story-thumb-placeholder",
+        children: "TNN"
+      })
+    }), o.jsxs("span", {
+      children: [o.jsx(cc, {
+        size: 24
+      }), " Watch Story"]
+    })]
+  });
+  return o.jsx("div", {
+    className: `story-player ${a ? "vertical" : "horizontal"}`,
+    children: n ? o.jsx("iframe", {
+      src: l,
+      title: `Video: ${e.title}`,
+      allow: "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share",
+      allowFullScreen: !0,
+      loading: "lazy"
+    }) : o.jsxs("button", {
+      type: "button",
+      className: "story-player-poster",
+      onClick: () => r(!0),
+      "aria-label": `Play video: ${e.title}`,
+      children: [o.jsx(Kn, {
+        video: e,
+        alt: e.thumbnail_alt || "",
+        loading: "eager",
+        fetchPriority: "high",
+        fallback: o.jsx("div", {
+          className: "story-thumb-placeholder",
+          children: "TNN"
+        })
+      }), o.jsxs("span", {
+        className: "story-player-play",
+        children: [o.jsx(cc, {
+          size: 28,
+          "aria-hidden": "true"
+        }), " Play"]
+      })]
+    })
+  });
+}
+
+function ShareBar({
+  title: e,
+  url: t
+}) {
+  const [n, r] = x.useState(!1),
+    s = encodeURIComponent(t),
+    i = encodeURIComponent(e);
+  async function a() {
+    try {
+      await navigator.clipboard.writeText(t), r(!0), setTimeout(() => r(!1), 2e3);
+    } catch (l) {
+      console.error("Copy link failed", l), window.prompt("Copy this link:", t);
+    }
+  }
+  return o.jsxs("div", {
+    className: "share-bar",
+    "aria-label": "Share this story",
+    role: "group",
+    children: [o.jsxs("span", {
+      className: "share-label",
+      children: [o.jsx(ShareIcon, {
+        size: 14,
+        "aria-hidden": "true"
+      }), " Share"]
+    }), o.jsxs("button", {
+      type: "button",
+      onClick: a,
+      children: [o.jsx(LinkIcon, {
+        size: 14,
+        "aria-hidden": "true"
+      }), n ? "Link copied" : "Copy link"]
+    }), o.jsx("a", {
+      href: `https://twitter.com/intent/tweet?url=${s}&text=${i}`,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "X"
+    }), o.jsx("a", {
+      href: `https://www.facebook.com/sharer/sharer.php?u=${s}`,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "Facebook"
+    }), o.jsxs("a", {
+      href: `mailto:?subject=${i}&body=${s}`,
+      children: [o.jsx(MailIcon, {
+        size: 14,
+        "aria-hidden": "true"
+      }), "Email"]
+    })]
+  });
+}
+
 function Yx() {
   const {
       id: e
@@ -1947,35 +2146,76 @@ function Yx() {
     u = Pr(t),
     c = ni(t == null ? void 0 : t.href),
     d = Qx(t == null ? void 0 : t.href),
-    h = Ph[t == null ? void 0 : t.section] || (t == null ? void 0 : t.section) || "Video",
+    h = siteSectionLabel(t == null ? void 0 : t.section),
     p = (t == null ? void 0 : t.dek) || `Watch ${(t == null ? void 0 : t.title) || "this TNN story"} from Tech News Network, Brooklyn Tech's student-run video newsroom.`,
-    y = x.useMemo(() => t ? {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      name: t.title,
-      description: p,
-      thumbnailUrl: u ? [u] : void 0,
-      uploadDate: t.created_at,
-      duration: Ex(t.runtime),
-      url: `${window.location.origin}${Bn(t)}`,
-      contentUrl: t.href && t.href !== "#pending-upload" ? t.href : void 0,
-      embedUrl: d ? `https://www.youtube.com/embed/${d}` : void 0,
-      publisher: {
-        "@type": "NewsMediaOrganization",
-        name: "Tech News Network",
-        logo: {
-          "@type": "ImageObject",
-          url: `${window.location.origin}/tnn-logo.png`
-        }
-      },
-      author: l.map(v => ({
-        "@type": "Person",
-        name: v.name,
-        jobTitle: At(v) || void 0
-      }))
-    } : null, [t, p, u, d, l]);
+    y = x.useMemo(() => {
+      if (!t) return null;
+      const v = "https://bthstnn.org",
+        _ = `${v}${Bn(t)}`,
+        k = new Date(publishedTime(t) || Date.now()).toISOString(),
+        g = t.updated_at ? new Date(t.updated_at).toISOString() : k,
+        f = {
+          "@type": "NewsMediaOrganization",
+          "@id": `${v}/#organization`,
+          name: "Tech News Network",
+          logo: {
+            "@type": "ImageObject",
+            url: `${v}/tnn-logo.png`
+          }
+        },
+        m = l.map(b => ({
+          "@type": "Person",
+          name: b.name,
+          jobTitle: At(b) || void 0,
+          url: mc(b) ? `${v}${mc(b)}` : void 0
+        }));
+      return {
+        "@context": "https://schema.org",
+        "@graph": [{
+          "@type": "VideoObject",
+          name: t.title,
+          description: p,
+          thumbnailUrl: u ? [u] : void 0,
+          uploadDate: k,
+          duration: Ex(t.runtime),
+          url: _,
+          contentUrl: t.href && t.href !== "#pending-upload" ? t.href : void 0,
+          embedUrl: d ? `https://www.youtube.com/embed/${d}` : instagramEmbedUrl(t.href) || void 0,
+          transcript: t.transcript || void 0,
+          publisher: f
+        }, {
+          "@type": "NewsArticle",
+          headline: t.title,
+          description: p,
+          image: u ? [u] : void 0,
+          datePublished: k,
+          dateModified: g,
+          mainEntityOfPage: _,
+          author: m.length ? m : [f],
+          publisher: f
+        }, {
+          "@type": "BreadcrumbList",
+          itemListElement: [{
+            "@type": "ListItem",
+            position: 1,
+            name: "Videos",
+            item: `${v}/videos/`
+          }, {
+            "@type": "ListItem",
+            position: 2,
+            name: h,
+            item: `${v}/videos/${t.section}/`
+          }, {
+            "@type": "ListItem",
+            position: 3,
+            name: t.title,
+            item: _
+          }]
+        }]
+      };
+    }, [t, p, u, d, l, h]);
   return ri({
-    title: t ? `${t.title} | TNN` : "Story | TNN",
+    title: t ? `${t.title} | Tech News Network (TNN) — Brooklyn Tech` : "Story | Tech News Network (TNN) — Brooklyn Tech",
     description: p,
     path: t ? Bn(t) : `/videos/story/${e}/`,
     type: "article",
@@ -2009,8 +2249,11 @@ function Yx() {
             children: t.dek
           }), o.jsxs("div", {
             className: "story-meta",
-            children: [t.date && o.jsx("span", {
-              children: t.date
+            children: [publishedTime(t) > 0 && o.jsxs("span", {
+              children: ["Published ", o.jsx("time", {
+                dateTime: new Date(publishedTime(t)).toISOString(),
+                children: formatPublished(t)
+              })]
             }), t.runtime && o.jsx("span", {
               children: t.runtime
             }), c && o.jsx("span", {
@@ -2019,37 +2262,21 @@ function Yx() {
           })]
         }), o.jsx("section", {
           className: "story-media",
-          children: d ? o.jsx("iframe", {
-            src: `https://www.youtube.com/embed/${d}`,
-            title: t.title,
-            allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
-            allowFullScreen: !0
-          }) : o.jsxs("a", {
-            href: t.href,
-            target: "_blank",
-            rel: "noopener noreferrer",
-            className: "story-thumbnail-link",
-            children: [o.jsx(Kn, {
-              video: t,
-              alt: t.title,
-              fallback: o.jsx("div", {
-                className: "story-thumb-placeholder",
-                children: "TNN"
-              })
-            }), o.jsxs("span", {
-              children: [o.jsx(cc, {
-                size: 24
-              }), " Watch Story"]
-            })]
+          children: o.jsx(StoryPlayer, {
+            video: t,
+            youtubeId: d
           })
         }), o.jsxs("section", {
           className: "story-body-grid",
           children: [o.jsxs("div", {
             className: "story-copy",
-            children: [o.jsx("h2", {
+            children: [t.body && t.body !== t.dek && o.jsx("h2", {
               children: "About This Story"
-            }), o.jsx("p", {
-              children: t.dek || "This public TNN story is part of Brooklyn Tech’s student-run video newsroom coverage."
+            }), t.body && t.body !== t.dek && o.jsx("p", {
+              children: t.body
+            }), o.jsx(ShareBar, {
+              title: t.title,
+              url: `https://bthstnn.org${Bn(t)}`
             }), t.href && t.href !== "#pending-upload" && o.jsxs("a", {
               href: t.href,
               target: "_blank",
@@ -2105,7 +2332,7 @@ function Yx() {
               alt: "",
               fallback: null
             }), o.jsx("span", {
-              children: Ph[v.section] || v.section
+              children: siteSectionLabel(v.section)
             }), o.jsx("h3", {
               children: v.title
             })]
@@ -4440,6 +4667,12 @@ function _k() {
           element: o.jsx(jt, {
             children: o.jsx(Fh, {})
           })
+        }), o.jsx(fe, {
+          path: "/join",
+          element: o.jsx(JoinPage, {})
+        }), o.jsx(fe, {
+          path: "/press",
+          element: o.jsx(PressPage, {})
         }), o.jsx(fe, {
           path: "*",
           element: o.jsx(vk, {})
