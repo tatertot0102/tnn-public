@@ -138,6 +138,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bthstnn.org/videos/story/bf62c27a-fd91-4f89-9801-b64d2f0c976e/11-14-shsat-postponed/</loc>
+    <lastmod>2026-11-15T21:30:44.87825+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-11-14/11-14-shsat-canceled-4a2c844f-bc7c-4c48-bb95-383d54b09ee9.webp</image:loc>
+      <image:title>11/14 SHSAT Postponed</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-11-14/11-14-shsat-canceled-4a2c844f-bc7c-4c48-bb95-383d54b09ee9.webp</video:thumbnail_loc>
+      <video:title>11/14 SHSAT Postponed</video:title>
+      <video:description>NOTE: This is the first year of the digital ADAPTIVE test, and the second year of the test being administered digitally.
+
+TNN reporter Alex Wolfowitz examines what went wrong during this morning&apos;s SHSAT after a technical issue with the testing platform forced the NYC Department of Education to halt testing. Some students completed the exam; others were sent home.
+
+Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and there are unconfirmed reports of technical issues at other testing sites across the city.</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DfvHsEPOJtS/?psln=bG1zeHlibHR6cG41</video:content_loc>
+      
+      <video:duration>62</video:duration>
+      <video:publication_date>2026-11-14T21:57:26.533Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
     <loc>https://bthstnn.org/videos/story/7e05eb1f-7a16-452f-a464-f466f0ec1d38/tnn-weather-noreaster/</loc>
     <lastmod>2026-09-28T00:20:51.28465+00:00</lastmod>
     <priority>0.85</priority>
