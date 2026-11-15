@@ -1,0 +1,86 @@
+[
+  {
+    "key_type": "legacy",
+    "schema": "public",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "legacy",
+    "schema": "net",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "legacy",
+    "schema": "supabase_functions",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "legacy",
+    "schema": "realtime",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "legacy",
+    "schema": "auth",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "legacy",
+    "schema": "storage",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "public",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "net",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "supabase_functions",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "realtime",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "auth",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  },
+  {
+    "key_type": "publishable",
+    "schema": "storage",
+    "status": 401,
+    "code": null,
+    "message": "Secret API key required"
+  }
+]

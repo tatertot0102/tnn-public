@@ -1,0 +1,38 @@
+[
+  {
+    "schema": "public",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "schema": "net",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "schema": "supabase_functions",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "schema": "realtime",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "schema": "auth",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  },
+  {
+    "schema": "storage",
+    "status": 401,
+    "code": null,
+    "message": "Invalid API key"
+  }
+]
