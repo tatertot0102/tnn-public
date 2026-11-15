@@ -3,7 +3,7 @@ export const SECTIONS = [
   { value: 'features', label: 'Features' },
   { value: 'breaking', label: 'Breaking' },
   { value: 'docs', label: 'Docs' },
-  { value: 'opinion', label: 'Opinion' },
+  { value: 'weather', label: 'Weather' },
   { value: 'sports', label: 'Sports' },
   { value: 'promo', label: 'Promo' },
   { value: 'catalog', label: 'Catalog' },
@@ -11,6 +11,7 @@ export const SECTIONS = [
 
 export const PLACEMENTS = [
   { value: 'hero', label: 'Hero' },
+  { value: 'trending', label: 'Trending' },
   { value: 'breaking-panel', label: 'Breaking Panel' },
   { value: 'homepage-catalog', label: 'Homepage Catalog' },
   { value: 'section-featured', label: 'Section Featured' },
@@ -18,10 +19,17 @@ export const PLACEMENTS = [
 
 export const DEFAULT_PLACEMENT = 'section-item'
 
+export const PUBLISH_STATUSES = [
+  { value: 'draft', label: 'Draft' },
+  { value: 'scheduled', label: 'Scheduled' },
+  { value: 'published', label: 'Published' },
+  { value: 'archived', label: 'Archived' },
+]
+
 export const SECTION_COLORS = {
-  hardnews: '#c0392b',
+  hardnews: '#0047AB',
   features: '#2563eb',
-  breaking: '#c0392b',
+  breaking: '#003a8c',
   docs: '#0f766e',
   opinion: '#7c3aed',
   sports: '#f59e0b',
@@ -94,15 +102,191 @@ export function getPlatform(url) {
   return 'Web'
 }
 
+export function getYoutubeVideoId(url) {
+  if (!url) return ''
+
+  try {
+    const parsed = new URL(url)
+    const host = parsed.hostname.replace(/^www\./, '')
+
+    if (host === 'youtu.be') return parsed.pathname.split('/').filter(Boolean)[0] || ''
+    if (host.endsWith('youtube.com')) {
+      if (parsed.searchParams.get('v')) return parsed.searchParams.get('v')
+      const parts = parsed.pathname.split('/').filter(Boolean)
+      if (['shorts', 'embed', 'live'].includes(parts[0])) return parts[1] || ''
+    }
+  } catch {
+    const match = String(url).match(/(?:v=|youtu\.be\/|shorts\/|embed\/|live\/)([a-zA-Z0-9_-]{11})/)
+    return match?.[1] || ''
+  }
+
+  return ''
+}
+
+export function getYoutubeThumbnailCandidates(url) {
+  const id = getYoutubeVideoId(url)
+  if (!id) return []
+
+  return [
+    `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`,
+    `https://i.ytimg.com/vi/${id}/sddefault.jpg`,
+    `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+    `https://i.ytimg.com/vi/${id}/mqdefault.jpg`,
+  ]
+}
+
 export function getYoutubeThumbnail(url) {
-  if (!url) return null
-  const match = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
-  if (match) return `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`
-  return null
+  const candidates = getYoutubeThumbnailCandidates(url)
+  return candidates[2] || null
 }
 
 export function isInstagramUrl(url) {
   return Boolean(url?.includes('instagram.com'))
+}
+
+export function isTemporaryInstagramCdnUrl(url) {
+  if (!url) return false
+  const value = String(url).toLowerCase()
+  return value.includes('cdninstagram.com') || value.includes('fbcdn.net')
+}
+
+export function safeThumbnailUrl(url) {
+  if (!url) return ''
+  if (isTemporaryInstagramCdnUrl(url)) return ''
+  return url
+}
+
+export function thumbnailForVideo(video) {
+  return (
+    safeThumbnailUrl(video?.thumbnail) ||
+    getYoutubeThumbnail(video?.href) ||
+    getInstagramThumbnailEmbedUrl(video?.href) ||
+    ''
+  )
+}
+
+export function getInstagramThumbnailEmbedUrl(url) {
+  if (!isInstagramUrl(url)) return ''
+  const params = new URLSearchParams({
+    url,
+    embed: 'image.url',
+    screenshot: 'false',
+    video: 'false',
+    audio: 'false',
+  })
+  return `https://api.microlink.io/?${params.toString()}`
+}
+
+export function thumbnailCandidatesForVideo(video) {
+  const candidates = []
+  const savedThumbnail = safeThumbnailUrl(video?.thumbnail)
+  if (savedThumbnail) candidates.push(savedThumbnail)
+
+  candidates.push(...getYoutubeThumbnailCandidates(video?.href))
+
+  const instagramFallback = getInstagramThumbnailEmbedUrl(video?.href)
+  if (instagramFallback) candidates.push(instagramFallback)
+
+  return [...new Set(candidates.filter(Boolean))]
+}
+
+const MONTHS = {
+  january: 0,
+  jan: 0,
+  february: 1,
+  feb: 1,
+  march: 2,
+  mar: 2,
+  april: 3,
+  apr: 3,
+  may: 4,
+  june: 5,
+  jun: 5,
+  july: 6,
+  jul: 6,
+  august: 7,
+  aug: 7,
+  september: 8,
+  sep: 8,
+  sept: 8,
+  october: 9,
+  oct: 9,
+  november: 10,
+  nov: 10,
+  december: 11,
+  dec: 11,
+}
+
+export function parseVideoDisplayDate(value) {
+  if (!value || typeof value !== 'string') return null
+  const clean = value.trim()
+  const namedMonth = clean.match(/^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})$/)
+
+  if (namedMonth) {
+    const month = MONTHS[namedMonth[1].toLowerCase()]
+    const day = Number(namedMonth[2])
+    const year = Number(namedMonth[3])
+    if (month === undefined || day < 1 || day > 31 || year < 1900) return null
+
+    const date = new Date(Date.UTC(year, month, day))
+    if (
+      date.getUTCFullYear() !== year ||
+      date.getUTCMonth() !== month ||
+      date.getUTCDate() !== day
+    ) {
+      return null
+    }
+    return date.getTime()
+  }
+
+  const fallback = Date.parse(clean)
+  return Number.isNaN(fallback) ? null : fallback
+}
+
+function parseStoredTimestamp(value) {
+  if (!value) return null
+  const timestamp = Date.parse(value)
+  return Number.isNaN(timestamp) ? null : timestamp
+}
+
+export function videoDisplayTimestamp(video) {
+  return (
+    parseVideoDisplayDate(video?.date) ??
+    parseStoredTimestamp(video?.created_at) ??
+    parseStoredTimestamp(video?.scheduled_at) ??
+    0
+  )
+}
+
+export function compareVideosByDisplayDate(a, b) {
+  return videoDisplayTimestamp(b) - videoDisplayTimestamp(a)
+}
+
+export function compareVideosByCmsDate(a, b) {
+  const aTime = parseVideoDisplayDate(a?.date)
+  const bTime = parseVideoDisplayDate(b?.date)
+
+  if (aTime !== null && bTime !== null && aTime !== bTime) return bTime - aTime
+  if (aTime !== null && bTime === null) return -1
+  if (aTime === null && bTime !== null) return 1
+
+  return String(a?.title || '').localeCompare(String(b?.title || ''))
+}
+
+export function publishStatusForVideo(video) {
+  if (video?.publish_status) return video.publish_status
+  if (video?.upload_status === 'planned') return 'scheduled'
+  return video?.published ? 'published' : 'draft'
+}
+
+export function isPublicVideo(video, now = new Date()) {
+  if (!video?.published) return false
+  const status = publishStatusForVideo(video)
+  if (status === 'draft' || status === 'archived') return false
+  if (status === 'scheduled' && video.scheduled_at) {
+    return new Date(video.scheduled_at) <= now
+  }
+  return status === 'published' || status === 'scheduled'
 }
 
 export async function getInstagramThumbnail(url) {
@@ -113,5 +297,14 @@ export async function getInstagramThumbnail(url) {
   if (!response.ok) return null
 
   const result = await response.json()
-  return result?.data?.image?.url || result?.data?.logo?.url || null
+  const imageUrl = result?.data?.image?.url || null
+  if (
+    !imageUrl ||
+    imageUrl.includes('instagram.com/static/images/ico') ||
+    imageUrl.includes('glyph-logo') ||
+    isTemporaryInstagramCdnUrl(imageUrl)
+  ) {
+    return null
+  }
+  return imageUrl
 }
