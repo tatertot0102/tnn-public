@@ -286,3 +286,12 @@
 .prerender-dek { font-family: var(--font-serif); font-size: 19px; }
 .prerender-meta, .prerender-list span { color: var(--pub-muted); font-size: 13px; }
 .prerender-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--pub-border); font-size: 13px; color: var(--pub-muted); }
+
+/* Header/hero cleanup */
+.pub-btn-sub { white-space: nowrap; }
+@media (max-width: 1100px) and (min-width: 641px) {
+  .pub-btn-sub span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+  .pub-btn-sub::after { content: "Subscribe"; }
+}
+.impact-kicker svg { display: none; }
+.breaking-track div { gap: 40px; }
