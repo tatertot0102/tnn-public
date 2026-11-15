@@ -1,0 +1,19 @@
+{
+  "public_routes": 54,
+  "cms_login_routes": 7,
+  "viewports": [
+    390,
+    768,
+    1440
+  ],
+  "paired_comparisons": 183,
+  "screenshots": 366,
+  "uncaught_browser_errors": 0,
+  "text_or_heading_differences": 0,
+  "layout_height_differences_over_1px": 0,
+  "fixture": "public rows captured read-only; CMS uses an explicitly synthetic session/profile; all mutating requests intercepted and denied",
+  "live_unmocked_browser_api_status": 200,
+  "node_public_api_status": 200,
+  "screenshots_directory": "/Users/zanewolf/.codex/tnn-audit/2026-11-15/matrix",
+  "private_auth_fixture_is_not_production_auth_test": true
+}

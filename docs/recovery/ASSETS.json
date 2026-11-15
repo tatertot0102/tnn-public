@@ -1,0 +1,41 @@
+{
+  "revision": "7155a07ce5d44c5439f06103637279df6e6cb2d4",
+  "css": {
+    "path": "assets/index-d0D4ciG6.css",
+    "sha256": "86e94056edee3182cf443e1250ea17fec7bfbc3f269d8bb657a38e4411796319"
+  },
+  "assets": [
+    {
+      "path": "apple-touch-icon.png",
+      "sha256": "a6f6265755ce9e5a9766e9dfcff800726af88a9121a618cadf6b5a22fd1fcd55"
+    },
+    {
+      "path": "assets/Horizontal-BfFo7lqE.png",
+      "sha256": "b9f444de246169e08c55dcc66ead08d58b846e28de261ab883bc790ef8eadce1"
+    },
+    {
+      "path": "assets/tnn-logo-gUVNthyh.png",
+      "sha256": "a670e208b366c24de12f4387820f475adfe5402e3db49581ec2507679874787e"
+    },
+    {
+      "path": "favicon-32.png",
+      "sha256": "a5549d06b26fdf14bd93c74d410ad894bc4028c0345b509fa667162ae8f4884e"
+    },
+    {
+      "path": "og-image.jpg",
+      "sha256": "7b5af10f094c7c88357e2db6f0ff1c4e9b314a8b1120e97d444997cf4691f33f"
+    },
+    {
+      "path": "partners/columbia-journalism.png",
+      "sha256": "b78da0ad05c498125b9599163469d15387cb743d78eee94754fdf39d0659acfd"
+    },
+    {
+      "path": "partners/the-survey.png",
+      "sha256": "f7d1b17c8ebece1d304f19d3d00d84fc1758ed3a8b9b3049b79f3ef96052ac9b"
+    },
+    {
+      "path": "tnn-logo.png",
+      "sha256": "a670e208b366c24de12f4387820f475adfe5402e3db49581ec2507679874787e"
+    }
+  ]
+}

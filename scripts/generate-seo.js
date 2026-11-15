@@ -120,7 +120,7 @@ async function fetchPublicRows(table, query) {
   const env = { ...await readEnvFile(), ...process.env }
   const supabaseUrl = env.VITE_SUPABASE_URL
   const anonKey = env.VITE_SUPABASE_ANON_KEY
-  if (!supabaseUrl || !anonKey || typeof fetch !== 'function') return []
+  if (!supabaseUrl || !anonKey || typeof fetch !== 'function') throw new Error('Supabase configuration is required for a complete build')
 
   const url = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}?${query}`
   const response = await fetch(url, {
@@ -134,6 +134,12 @@ async function fetchPublicRows(table, query) {
 }
 
 async function loadSeoData() {
+  if (process.env.TNN_SEO_FIXTURE) {
+    if (process.env.CI) throw new Error('Fixture SEO builds are forbidden in CI')
+    const snapshot = JSON.parse(await fs.readFile(process.env.TNN_SEO_FIXTURE, 'utf8'))
+    if (!Array.isArray(snapshot.videos) || !Array.isArray(snapshot.public_profiles)) throw new Error('Invalid local verification snapshot')
+    return { videos: snapshot.videos.filter(isPublicVideo), profiles: snapshot.public_profiles }
+  }
   try {
     const [videos, profiles] = await Promise.all([
       fetchPublicRows('videos', 'select=*&published=eq.true&order=display_order.asc,created_at.desc'),
@@ -144,8 +150,7 @@ async function loadSeoData() {
       profiles: profiles || [],
     }
   } catch (error) {
-    console.warn(`[seo] Using fallback sitemap/RSS: ${error.message}`)
-    return { videos: [], profiles: [] }
+    throw new Error(`Refusing an incomplete SEO build: ${error.message}`)
   }
 }
 
@@ -213,9 +218,9 @@ ${entries.map(entry => `  <url>
 }
 
 function buildRss({ videos }) {
-  const items = videos.slice(0, 30).map(video => {
+  const items = videos.map(video => {
     const pubDate = video.scheduled_at || video.created_at || new Date().toISOString()
-    const link = video.href || routeUrl('/videos')
+    const link = routeUrl(`/videos/story/${video.id}/${videoSlug(video.title)}`)
     return `    <item>
       <title>${escapeXml(video.title)}</title>
       <link>${escapeXml(link)}</link>
@@ -226,9 +231,10 @@ function buildRss({ videos }) {
   }).join('\n')
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech News Network Videos</title>
+    <atom:link href="${escapeXml(`${SITE_URL}/rss.xml`)}" rel="self" type="application/rss+xml" />
     <link>${escapeXml(SITE_URL)}</link>
     <description>Student-produced video journalism from Tech News Network at Brooklyn Tech.</description>
     <language>en-us</language>
@@ -359,7 +365,15 @@ async function writePrerenders({ videos, profiles }) {
   for (const video of videos) {
     const dir = path.join(distDir, 'videos', 'story', String(video.id), videoSlug(video.title))
     await fs.mkdir(dir, { recursive: true })
-    await fs.writeFile(path.join(dir, 'index.html'), buildStoryPrerender(baseHtml, video))
+    const html = buildStoryPrerender(baseHtml, video)
+    await fs.writeFile(path.join(dir, 'index.html'), html)
+    // Preserve the inbound URL introduced by the one-time C1 hotfix. Phase E
+    // replaces these static aliases with ID-based server-side 301 redirects.
+    if (video.id === 'bf62c27a-fd91-4f89-9801-b64d2f0c976e') {
+      const legacyDir = path.join(distDir, 'videos', 'story', video.id, '11-14-shsat-canceled')
+      await fs.mkdir(legacyDir, { recursive: true })
+      await fs.writeFile(path.join(legacyDir, 'index.html'), html)
+    }
     story += 1
   }
 

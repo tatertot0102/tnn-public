@@ -5,6 +5,31 @@ function parseCredits(rawCredits) {
   return parseJsonArray(rawCredits)
 }
 
+export function staffSlug(value = 'staff') {
+  const source = typeof value === 'string'
+    ? value
+    : value?.full_name || value?.name || value?.id || 'staff'
+
+  return String(source || 'staff')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/['"]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80) || 'staff'
+}
+
+export function staffPath(profileOrCredit) {
+  const slugSource = profileOrCredit?.full_name || profileOrCredit?.name || profileOrCredit?.id || profileOrCredit
+  const slug = staffSlug(slugSource)
+  return slug ? `/staff/${slug}/` : ''
+}
+
+function isUuid(value = '') {
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)
+}
+
 export function creditRoles(credit) {
   const roles = parseJsonArray(credit?.roles).filter(Boolean)
   if (roles.length) return roles
@@ -25,6 +50,7 @@ export function normalizeCredits(rawCredits = [], profiles = new Map()) {
       return {
         profile_id: profileId,
         name,
+        slug: staffSlug(name || profileId),
         roles: creditRoles(credit),
         role: creditRoleLabel(credit),
         show: credit.show !== false,
@@ -55,14 +81,13 @@ export function creatorName(video) {
 }
 
 export function creatorPath(videoOrId) {
-  const id = typeof videoOrId === 'string'
-    ? videoOrId
-    : visibleCredits(videoOrId).find(credit => credit.profile_id)?.profile_id || videoOrId?.creator_id
-  return id ? `/creators/${id}` : ''
+  if (typeof videoOrId === 'string') return staffPath(videoOrId)
+  const credit = visibleCredits(videoOrId).find(item => item.profile_id || item.name)
+  return credit ? staffPath(credit) : ''
 }
 
 export function creditPath(credit) {
-  return credit?.profile_id ? `/creators/${credit.profile_id}` : ''
+  return credit?.profile_id || credit?.name ? staffPath(credit) : ''
 }
 
 export async function fetchCreatorsByIds(ids) {
@@ -72,7 +97,7 @@ export async function fetchCreatorsByIds(ids) {
   let data = null
   const publicResult = await supabase
     .from('public_profiles')
-    .select('id, full_name, role')
+    .select('*')
     .in('id', uniqueIds)
 
   if (!publicResult.error) {
@@ -80,7 +105,7 @@ export async function fetchCreatorsByIds(ids) {
   } else {
     const fallbackResult = await supabase
       .from('profiles')
-      .select('id, full_name, role')
+      .select('*')
       .in('id', uniqueIds)
     if (!fallbackResult.error) data = fallbackResult.data
   }
@@ -104,21 +129,40 @@ export async function attachCreators(videos) {
   }))
 }
 
-export async function fetchCreatorById(id) {
-  if (!id) return null
+async function fetchProfileTableBySlug(table, slug) {
+  const result = await supabase
+    .from(table)
+    .select('*')
+
+  if (result.error) return null
+  return (result.data || []).find(profile => staffSlug(profile) === slug) || null
+}
+
+export async function fetchCreatorById(idOrSlug) {
+  if (!idOrSlug) return null
+
+  const lookup = String(idOrSlug)
+
+  if (!isUuid(lookup)) {
+    const publicBySlug = await fetchProfileTableBySlug('public_profiles', staffSlug(lookup))
+    if (publicBySlug) return publicBySlug
+
+    const fallbackBySlug = await fetchProfileTableBySlug('profiles', staffSlug(lookup))
+    return fallbackBySlug
+  }
 
   const publicResult = await supabase
     .from('public_profiles')
-    .select('id, full_name, role')
-    .eq('id', id)
+    .select('*')
+    .eq('id', lookup)
     .single()
 
   if (!publicResult.error) return publicResult.data
 
   const fallbackResult = await supabase
     .from('profiles')
-    .select('id, full_name, role')
-    .eq('id', id)
+    .select('*')
+    .eq('id', lookup)
     .single()
 
   return fallbackResult.error ? null : fallbackResult.data

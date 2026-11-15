@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.claude/
+supabase/.temp/
+supabase/.branches/
+
+# Local dependency link and build-generated SEO artifacts.
+/node_modules
+/public/rss.xml
+/public/sitemap.xml
+/public/robots.txt
