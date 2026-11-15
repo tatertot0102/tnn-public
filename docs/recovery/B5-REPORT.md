@@ -29,3 +29,5 @@ A separate fresh, unmocked Chrome visit to production returned 200 for videos/pu
 ## Gate
 
 B2–B5 are prepared for review; B6 merge requires the owner's approval under the consolidated plan. Authenticated Supabase integration/email tests remain necessary before security deployment. Phases D–I have not been implemented or deployed from this recovery branch: advancing them requires the phase gate and must not silently discard recovered features or invent missing facts. See docs/audit/PLAN-STATUS.md for the complete remaining plan and owner actions.
+
+C1 compatibility follow-up: full builds retain the legacy SHSAT canceled-slug static URL with the current headline/canonical, so a later approved build does not erase the hotfix alias. The future SSR phase still needs the ID-based 301 behavior.
