@@ -3,18 +3,18 @@ const path = require('node:path')
 
 const DIST_DIR = path.join(process.cwd(), 'dist')
 const ASSETS_DIR = path.join(process.cwd(), 'dist', 'assets')
-const LEGACY_JS = ['index-CYOvmjPi.js']
-const LEGACY_CSS = ['index-Dd1J4IQ3.css']
+const LEGACY_JS = ["index-CYOvmjPi.js", "index-CbdbyIif.js"]
+const LEGACY_CSS = ["index-Dd1J4IQ3.css", "index-d0D4ciG6.css"]
 const STATIC_ROUTES = [
-  '/about',
-  '/videos',
-  '/videos/hardnews',
-  '/videos/features',
-  '/videos/breaking',
-  '/videos/docs',
-  '/videos/opinion',
-  '/videos/sports',
-  '/login',
+  "/about",
+  "/login",
+  "/videos",
+  "/videos/breaking",
+  "/videos/docs",
+  "/videos/features",
+  "/videos/hardnews",
+  "/videos/opinion",
+  "/videos/sports"
 ]
 
 async function newestAsset(extension) {

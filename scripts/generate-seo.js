@@ -120,7 +120,7 @@ async function fetchPublicRows(table, query) {
   const env = { ...await readEnvFile(), ...process.env }
   const supabaseUrl = env.VITE_SUPABASE_URL
   const anonKey = env.VITE_SUPABASE_ANON_KEY
-  if (!supabaseUrl || !anonKey || typeof fetch !== 'function') return []
+  if (!supabaseUrl || !anonKey || typeof fetch !== 'function') throw new Error('Supabase configuration is required for a complete build')
 
   const url = `${supabaseUrl.replace(/\/$/, '')}/rest/v1/${table}?${query}`
   const response = await fetch(url, {
@@ -134,6 +134,12 @@ async function fetchPublicRows(table, query) {
 }
 
 async function loadSeoData() {
+  if (process.env.TNN_SEO_FIXTURE) {
+    if (process.env.CI) throw new Error('Fixture SEO builds are forbidden in CI')
+    const snapshot = JSON.parse(await fs.readFile(process.env.TNN_SEO_FIXTURE, 'utf8'))
+    if (!Array.isArray(snapshot.videos) || !Array.isArray(snapshot.public_profiles)) throw new Error('Invalid local verification snapshot')
+    return { videos: snapshot.videos.filter(isPublicVideo), profiles: snapshot.public_profiles }
+  }
   try {
     const [videos, profiles] = await Promise.all([
       fetchPublicRows('videos', 'select=*&published=eq.true&order=display_order.asc,created_at.desc'),
@@ -144,8 +150,7 @@ async function loadSeoData() {
       profiles: profiles || [],
     }
   } catch (error) {
-    console.warn(`[seo] Using fallback sitemap/RSS: ${error.message}`)
-    return { videos: [], profiles: [] }
+    throw new Error(`Refusing an incomplete SEO build: ${error.message}`)
   }
 }
 

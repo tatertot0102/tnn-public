@@ -1,0 +1,111 @@
+# Deploy bthstnn.org to GitHub Pages.
+#
+# Deploys are built in CI from `main` only. Never run `npm run deploy`
+# (gh-pages -d dist) from a laptop: that publishes whatever is in the local
+# folder, committed or not.
+#
+# Trigger: manual only (Actions tab -> "Deploy to GitHub Pages" -> Run workflow,
+# branch: main) for now. `main` currently holds older source than the live
+# site, so an automatic deploy on push would roll the site back.
+#
+# TODO: once the source reconstruction has landed on `main` and a manual run of
+# this workflow has been verified, add automatic deploys:
+#
+#   on:
+#     push:
+#       branches: [main]
+#     workflow_dispatch:
+#
+# Required GitHub settings (Settings -> Environments -> production):
+#   - variable VITE_SUPABASE_URL
+#   - secret   VITE_SUPABASE_ANON_KEY (public by design, but kept out of the repo)
+#   - required reviewers + "Deployment branches: main" for approval
+# Pages source stays "Deploy from a branch: gh-pages / (root)".
+
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+# Default to read-only; the deploy job widens this to what it needs.
+permissions:
+  contents: read
+
+# Never let two deploys overlap; a newer run waits for the current one.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  verify-approval-gate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require configured production reviewers
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          count=$(gh api "repos/$GH_REPO/environments/production" --jq '[.protection_rules[] | select(.type == "required_reviewers") | .reviewers[]] | length')
+          if [ "$count" -lt 1 ]; then
+            echo "::error::Configure required reviewers for the production environment before deployment."
+            exit 1
+          fi
+  deploy:
+    name: Build and deploy
+    needs: verify-approval-gate
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: production
+      url: https://bthstnn.org
+    permissions:
+      contents: write # push the built site to the gh-pages branch
+    env:
+      # Used by `vite build` and by scripts/generate-seo.js (prebuild and
+      # postbuild), which fetches published videos/profiles from Supabase to
+      # prerender story and staff pages and build the sitemaps.
+      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+    steps:
+      - name: Check out main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node 20
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 20
+          cache: npm
+
+      # generate-seo.js silently skips prerendering when these are missing,
+      # which would publish a site with no story/staff pages. Fail loudly.
+      - name: Check Supabase config is present
+        run: |
+          missing=0
+          if [ -z "$VITE_SUPABASE_URL" ]; then
+            echo "::error::Variable VITE_SUPABASE_URL is not set (production environment or repository variables)."
+            missing=1
+          fi
+          if [ -z "$VITE_SUPABASE_ANON_KEY" ]; then
+            echo "::error::Secret VITE_SUPABASE_ANON_KEY is not set (production environment or repository secrets)."
+            missing=1
+          fi
+          exit "$missing"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish dist/ to gh-pages
+        uses: peaceiris/actions-gh-pages@1ef5a1b1df4c63fe21a2242edbee6cac921ece01 # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+          cname: bthstnn.org
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          full_commit_message: "deploy: ${{ github.sha }} (run ${{ github.run_id }})"
