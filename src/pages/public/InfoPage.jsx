@@ -37,7 +37,7 @@ const PARTNERS = [
 
 const PUBLIC_ROLE_LABELS = {
   exec: 'Executive',
-  associate: 'Associate',
+  associate: 'Junior Executive',
   member: 'Member',
 }
 
@@ -283,7 +283,7 @@ export default function InfoPage() {
         <section className="info-directory-intro">
           <h2>TNN staff</h2>
           <div>
-            <p>Executives, associates, and members manage TNN's reporting and production.</p>
+            <p>Executives, junior executives, and members manage TNN's reporting and production.</p>
             <a href={JOIN_URL} target="_blank" rel="noopener noreferrer">
               Apply to join TNN <ArrowRight size={14} />
             </a>
@@ -299,7 +299,7 @@ export default function InfoPage() {
         ) : staff.length ? (
           <>
             <StaffGroup title="Executives" role="exec" members={groupedStaff.exec} />
-            <StaffGroup title="Associates" role="associate" members={groupedStaff.associate} />
+            <StaffGroup title="Junior Executives" role="associate" members={groupedStaff.associate} />
             <StaffGroup title="Members" role="member" members={groupedStaff.member} />
           </>
         ) : (

@@ -9,7 +9,7 @@ const ROLES = ['admin', 'exec', 'member', 'alumni']
 const HEADSHOT_BUCKET = 'staff-headshots'
 const PUBLIC_ROLES = [
   { value: 'exec', label: 'Executive', color: '#60a5fa' },
-  { value: 'associate', label: 'Associate', color: '#2dd4bf' },
+  { value: 'associate', label: 'Junior Executive', color: '#2dd4bf' },
   { value: 'member', label: 'Member', color: '#a78bfa' },
 ]
 

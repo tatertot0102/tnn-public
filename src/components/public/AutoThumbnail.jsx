@@ -10,6 +10,8 @@ export function AutoThumbnail({
   referrerPolicy = 'no-referrer',
   loading = 'lazy',
   fetchPriority,
+  width = 1200,
+  height = 675,
 }) {
   const candidates = useMemo(
     () => thumbnailCandidatesForVideo(video),
@@ -72,6 +74,8 @@ export function AutoThumbnail({
       referrerPolicy={referrerPolicy}
       loading={loading}
       fetchPriority={fetchPriority}
+      width={width}
+      height={height}
       decoding="async"
       onError={() => {
         setSrc('')
