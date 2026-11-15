@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech News Network Videos</title>
+    <atom:link href="https://bthstnn.org/rss.xml" rel="self" type="application/rss+xml" />
     <link>https://bthstnn.org</link>
     <description>Student-produced video journalism from Tech News Network at Brooklyn Tech.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 21:38:04 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 23:21:24 GMT</lastBuildDate>
     <item>
       <title>11/14 SHSAT Postponed</title>
       <link>https://bthstnn.org/videos/story/bf62c27a-fd91-4f89-9801-b64d2f0c976e/11-14-shsat-postponed/</link>
@@ -18,67 +19,62 @@ TNN reporter Alex Wolfowitz examines what went wrong during this morning&apos;s 
 Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and there are unconfirmed reports of technical issues at other testing sites across the city.</description>
     </item>
     <item>
+      <title>Respect for All at Brooklyn Tech</title>
+      <link>https://bthstnn.org/videos/story/0e8f214c-eb46-4dec-8031-654a6d3580f3/respect-for-all-at-brooklyn-tech/</link>
+      <guid isPermaLink="false">0e8f214c-eb46-4dec-8031-654a6d3580f3</guid>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description>TNN Reporter Iffat Abidah explores Student Government’s newest branch, Respect For All, discussing its purpose, origins, and formation. If you’ve experienced or witnessed bullying, harassment, or discrimination, contact BTHS Respect For All Liaisons Diana Liu (dliu3@schools.nyc.gov) or Christa Martin (Cmartin39@schools.nyc.gov) for support.</description>
+    </item>
+    <item>
+      <title>Joining America&apos;s LARGEST Public High School</title>
+      <link>https://bthstnn.org/videos/story/f4b128da-673d-47a5-b05a-eb0e24038624/joining-americas-largest-public-high-school/</link>
+      <guid isPermaLink="false">f4b128da-673d-47a5-b05a-eb0e24038624</guid>
+      <pubDate>Mon, 05 Oct 2026 23:01:21 GMT</pubDate>
+      <description>Joining America&apos;s LARGEST Public High School</description>
+    </item>
+    <item>
+      <title>Meet Butters, Tech&apos;s Therapy Dog!</title>
+      <link>https://bthstnn.org/videos/story/0acfff16-f72e-49a9-b2ff-04afebad546c/meet-butters-techs-therapy-dog/</link>
+      <guid isPermaLink="false">0acfff16-f72e-49a9-b2ff-04afebad546c</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Meet Butters, Tech’s Official Therapy Dog!
+~
+*Filmed during the 2025-2026 school year.</description>
+    </item>
+    <item>
       <title>TNN Weather: Nor&apos;easter</title>
       <link>https://bthstnn.org/videos/story/7e05eb1f-7a16-452f-a464-f466f0ec1d38/tnn-weather-noreaster/</link>
       <guid isPermaLink="false">7e05eb1f-7a16-452f-a464-f466f0ec1d38</guid>
-      <pubDate>Sun, 27 Sep 2026 15:15:04 GMT</pubDate>
+      <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
       <description>TNN Reporter Jack Tergesen breaks down the Nor’Easter bearing down on the Tri-State area. Impacts will persist until mid-day Monday with on and off rain, and winds steadily decreasing throughout the event.</description>
     </item>
     <item>
-      <title>Introducing Tech News Network. </title>
-      <link>https://bthstnn.org/videos/story/99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea/introducing-tech-news-network/</link>
-      <guid isPermaLink="false">99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea</guid>
-      <pubDate>Fri, 15 May 2026 01:59:18 GMT</pubDate>
-      <description>Introducing Tech News Network. </description>
+      <title>A High School Student Band - Lulu and Monica Interview</title>
+      <link>https://bthstnn.org/videos/story/bae1a262-f878-41ec-9f0b-7657eed925d1/a-high-school-student-band-lulu-and-monica-interview/</link>
+      <guid isPermaLink="false">bae1a262-f878-41ec-9f0b-7657eed925d1</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <description>@_monicalily @lulu.katsuki</description>
     </item>
     <item>
-      <title>TNN WEATHER: Meteorologist Jack Tergesen reports</title>
-      <link>https://bthstnn.org/videos/story/0f13def5-5257-4294-8ee7-047b10d635dc/tnn-weather-meteorologist-jack-tergesen-reports/</link>
-      <guid isPermaLink="false">0f13def5-5257-4294-8ee7-047b10d635dc</guid>
-      <pubDate>Fri, 15 May 2026 01:45:52 GMT</pubDate>
-      <description>TNN WEATHER: Meteorologist Jack Tergesen reports</description>
+      <title>Where does &apos;26 see themselves in 10 Years?</title>
+      <link>https://bthstnn.org/videos/story/1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079/where-does-26-see-themselves-in-10-years/</link>
+      <guid isPermaLink="false">1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079</guid>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Where does the Class of 2026 see themselves in 10 years?
+
+Brought to you by TNN Reporters @jacktergesenn and @annarose_griz !
+
+#bths #classof2026 #graduation #nyc #collegedecisionday</description>
     </item>
     <item>
-      <title>Introducing TNN&apos;s Marketing Team</title>
-      <link>https://bthstnn.org/videos/story/c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6/introducing-tnns-marketing-team/</link>
-      <guid isPermaLink="false">c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6</guid>
-      <pubDate>Tue, 05 May 2026 03:20:17 GMT</pubDate>
-      <description>Introducing TNN&apos;s Marketing Team</description>
-    </item>
-    <item>
-      <title>The History of Rocky’s Deli</title>
-      <link>https://bthstnn.org/videos/story/03abb054-4810-424c-8976-498f306c24ac/the-history-of-rocky-s-deli/</link>
-      <guid isPermaLink="false">03abb054-4810-424c-8976-498f306c24ac</guid>
-      <pubDate>Tue, 05 May 2026 01:54:43 GMT</pubDate>
-      <description>The History of Rocky’s Deli</description>
-    </item>
-    <item>
-      <title>Introducing TNN Sports: Superbowl Takes</title>
-      <link>https://bthstnn.org/videos/story/763f9a0c-15b5-415d-8079-05e0a00f4858/introducing-tnn-sports-superbowl-takes/</link>
-      <guid isPermaLink="false">763f9a0c-15b5-415d-8079-05e0a00f4858</guid>
-      <pubDate>Tue, 05 May 2026 03:13:38 GMT</pubDate>
-      <description>Introducing TNN Sports: Superbowl Takes</description>
-    </item>
-    <item>
-      <title>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</title>
-      <link>https://bthstnn.org/videos/story/96bcd650-7526-4e59-9e45-d4f52917f3ca/very-interesting-and-intense-meet-the-cast-of-lost-girl/</link>
-      <guid isPermaLink="false">96bcd650-7526-4e59-9e45-d4f52917f3ca</guid>
-      <pubDate>Tue, 05 May 2026 01:35:55 GMT</pubDate>
-      <description>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</description>
-    </item>
-    <item>
-      <title>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</title>
-      <link>https://bthstnn.org/videos/story/8fc6e658-5de5-4537-bf32-c8667360e652/tnn-meteorologist-jack-tergesen-breaks-down-the-upcoming-storm-2-22-26/</link>
-      <guid isPermaLink="false">8fc6e658-5de5-4537-bf32-c8667360e652</guid>
-      <pubDate>Fri, 15 May 2026 01:49:43 GMT</pubDate>
-      <description>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</description>
-    </item>
-    <item>
-      <title>Looking Back at Anti-ICE resistance in Tech</title>
-      <link>https://bthstnn.org/videos/story/1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd/looking-back-at-anti-ice-resistance-in-tech/</link>
-      <guid isPermaLink="false">1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd</guid>
-      <pubDate>Tue, 05 May 2026 01:28:39 GMT</pubDate>
-      <description>Looking Back at Anti-ICE resistance in Tech</description>
+      <title>Who do Tech Students have winning in the NBA Finals?</title>
+      <link>https://bthstnn.org/videos/story/fe50a30f-7f6f-4288-9a34-052a03b09bde/who-do-tech-students-have-winning-in-the-nba-finals/</link>
+      <guid isPermaLink="false">fe50a30f-7f6f-4288-9a34-052a03b09bde</guid>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Hosts: @henryberlach &amp; @matthewroth_13
+Directors: @zanewwolf, @nicksilverbricks, @takuo.ymt51, and @maxwell.reyfman
+Video Editor: @nicksilverbricks
+#newyorkknicks #nba #nbafinals</description>
     </item>
     <item>
       <title>Tech’s Courtyard: Untold History &amp; What’s Next</title>
@@ -88,60 +84,88 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
       <description>Tech’s Courtyard: Untold History &amp; What’s Next</description>
     </item>
     <item>
-      <title>Who do Tech Students have winning in the NBA Finals?</title>
-      <link>https://bthstnn.org/videos/story/fe50a30f-7f6f-4288-9a34-052a03b09bde/who-do-tech-students-have-winning-in-the-nba-finals/</link>
-      <guid isPermaLink="false">fe50a30f-7f6f-4288-9a34-052a03b09bde</guid>
-      <pubDate>Thu, 30 Jul 2026 20:33:30 GMT</pubDate>
-      <description>Hosts: @henryberlach &amp; @matthewroth_13
-Directors: @zanewwolf, @nicksilverbricks, @takuo.ymt51, and @maxwell.reyfman
-Video Editor: @nicksilverbricks
-#newyorkknicks #nba #nbafinals</description>
+      <title>The History of Rocky’s Deli</title>
+      <link>https://bthstnn.org/videos/story/03abb054-4810-424c-8976-498f306c24ac/the-history-of-rocky-s-deli/</link>
+      <guid isPermaLink="false">03abb054-4810-424c-8976-498f306c24ac</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>The History of Rocky’s Deli</description>
+    </item>
+    <item>
+      <title>Looking Back at Anti-ICE resistance in Tech</title>
+      <link>https://bthstnn.org/videos/story/1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd/looking-back-at-anti-ice-resistance-in-tech/</link>
+      <guid isPermaLink="false">1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Looking Back at Anti-ICE resistance in Tech</description>
+    </item>
+    <item>
+      <title>Mamdani on Public School Classroom Sizes</title>
+      <link>https://bthstnn.org/videos/story/72cb6628-c8d1-4220-9466-9fa00d7d9eaf/mamdani-on-public-school-classroom-sizes/</link>
+      <guid isPermaLink="false">72cb6628-c8d1-4220-9466-9fa00d7d9eaf</guid>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Mamdani on Public School Classroom Sizes</description>
     </item>
     <item>
       <title>Who do Tech students think will win the NCAA Men’s Basketball Championship?</title>
       <link>https://bthstnn.org/videos/story/1a6b2c14-59f1-4121-962d-7c39205aabec/who-do-tech-students-think-will-win-the-ncaa-men-s-basketball-championship/</link>
       <guid isPermaLink="false">1a6b2c14-59f1-4121-962d-7c39205aabec</guid>
-      <pubDate>Tue, 05 May 2026 03:00:38 GMT</pubDate>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
       <description>Who do Tech students think will win the NCAA Men’s Basketball Championship?</description>
     </item>
     <item>
       <title>Taking a Look Back at The Blizzard of 2026</title>
       <link>https://bthstnn.org/videos/story/89d88551-dc23-4903-aed8-525f4c758522/taking-a-look-back-at-the-blizzard-of-2026/</link>
       <guid isPermaLink="false">89d88551-dc23-4903-aed8-525f4c758522</guid>
-      <pubDate>Tue, 05 May 2026 01:30:55 GMT</pubDate>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
       <description>Taking a Look Back at The Blizzard of 2026</description>
     </item>
     <item>
-      <title>Where does &apos;26 see themselves in 10 Years?</title>
-      <link>https://bthstnn.org/videos/story/1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079/where-does-26-see-themselves-in-10-years/</link>
-      <guid isPermaLink="false">1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079</guid>
-      <pubDate>Thu, 30 Jul 2026 20:37:43 GMT</pubDate>
-      <description>Where does the Class of 2026 see themselves in 10 years?
-
-Brought to you by TNN Reporters @jacktergesenn and @annarose_griz !
-
-#bths #classof2026 #graduation #nyc #collegedecisionday</description>
+      <title>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</title>
+      <link>https://bthstnn.org/videos/story/8fc6e658-5de5-4537-bf32-c8667360e652/tnn-meteorologist-jack-tergesen-breaks-down-the-upcoming-storm-2-22-26/</link>
+      <guid isPermaLink="false">8fc6e658-5de5-4537-bf32-c8667360e652</guid>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
+      <description>TNN Meteorologist Jack Tergesen breaks down the upcoming storm (2/22/26)</description>
     </item>
     <item>
-      <title>A High School Student Band - Lulu and Monica Interview</title>
-      <link>https://bthstnn.org/videos/story/bae1a262-f878-41ec-9f0b-7657eed925d1/a-high-school-student-band-lulu-and-monica-interview/</link>
-      <guid isPermaLink="false">bae1a262-f878-41ec-9f0b-7657eed925d1</guid>
-      <pubDate>Thu, 30 Jul 2026 20:41:08 GMT</pubDate>
-      <description>@_monicalily @lulu.katsuki</description>
+      <title>Introducing TNN Sports: Superbowl Takes</title>
+      <link>https://bthstnn.org/videos/story/763f9a0c-15b5-415d-8079-05e0a00f4858/introducing-tnn-sports-superbowl-takes/</link>
+      <guid isPermaLink="false">763f9a0c-15b5-415d-8079-05e0a00f4858</guid>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Introducing TNN Sports: Superbowl Takes</description>
     </item>
     <item>
-      <title>Mamdani on Public School Classroom Sizes</title>
-      <link>https://bthstnn.org/videos/story/72cb6628-c8d1-4220-9466-9fa00d7d9eaf/mamdani-on-public-school-classroom-sizes/</link>
-      <guid isPermaLink="false">72cb6628-c8d1-4220-9466-9fa00d7d9eaf</guid>
-      <pubDate>Sun, 17 May 2026 04:31:19 GMT</pubDate>
-      <description>Mamdani on Public School Classroom Sizes</description>
+      <title>TNN WEATHER: Meteorologist Jack Tergesen reports</title>
+      <link>https://bthstnn.org/videos/story/0f13def5-5257-4294-8ee7-047b10d635dc/tnn-weather-meteorologist-jack-tergesen-reports/</link>
+      <guid isPermaLink="false">0f13def5-5257-4294-8ee7-047b10d635dc</guid>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+      <description>TNN WEATHER: Meteorologist Jack Tergesen reports</description>
     </item>
     <item>
       <title>TNN at the 2026 Culture Fair!</title>
       <link>https://bthstnn.org/videos/story/8815c6c6-3011-4c0e-9287-660d235f364f/tnn-at-the-2026-culture-fair/</link>
       <guid isPermaLink="false">8815c6c6-3011-4c0e-9287-660d235f364f</guid>
-      <pubDate>Tue, 05 May 2026 18:50:06 GMT</pubDate>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate>
       <description>TNN at the 2026 Culture Fair!</description>
+    </item>
+    <item>
+      <title>Introducing TNN&apos;s Marketing Team</title>
+      <link>https://bthstnn.org/videos/story/c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6/introducing-tnns-marketing-team/</link>
+      <guid isPermaLink="false">c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6</guid>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 GMT</pubDate>
+      <description>Introducing TNN&apos;s Marketing Team</description>
+    </item>
+    <item>
+      <title>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</title>
+      <link>https://bthstnn.org/videos/story/96bcd650-7526-4e59-9e45-d4f52917f3ca/very-interesting-and-intense-meet-the-cast-of-lost-girl/</link>
+      <guid isPermaLink="false">96bcd650-7526-4e59-9e45-d4f52917f3ca</guid>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 GMT</pubDate>
+      <description>‘VERY INTERESTING AND INTENSE’: Meet the Cast of Lost Girl</description>
+    </item>
+    <item>
+      <title>Introducing Tech News Network. </title>
+      <link>https://bthstnn.org/videos/story/99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea/introducing-tech-news-network/</link>
+      <guid isPermaLink="false">99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea</guid>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 GMT</pubDate>
+      <description>Introducing Tech News Network. </description>
     </item>
   </channel>
 </rss>

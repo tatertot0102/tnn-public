@@ -4,137 +4,157 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://bthstnn.org/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/about/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/videos/hardnews/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/videos/features/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/breaking/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/videos/docs/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <loc>https://bthstnn.org/videos/hardnews/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/videos/opinion/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <loc>https://bthstnn.org/videos/features/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/weather/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/videos/sports/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/join/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/press/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/jack-tergesen/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/iffat-abidah/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/isaiah-ferguson/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/jayden-cunha/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/jones-hilburn/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/lia-pelle/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/matthew-roth/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bthstnn.org/staff/maximo-welter-gomez/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bthstnn.org/staff/maxwell-reyfman/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <loc>https://bthstnn.org/staff/lia-pelle/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/zane-wolf/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/ibrahim-chaudhri/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/nicholas-chan/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/iffat-abidah/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/takuo-yamamoto/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/annarose-grizzle/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/isaiah-ferguson/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/alex-wolfowitz/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/eric-law/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/maximo-welter-gomez/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/henry-berlach/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/jayden-cunha/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/aurora-vonbusch/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/haley-feng/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/edoardo-capone/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bthstnn.org/staff/aanya-misra/</loc>
-    <lastmod>2026-09-28T00:35:13.980Z</lastmod>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/staff/maxwell-reyfman/</loc>
+    <lastmod>2026-11-15T23:21:24.869Z</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -163,15 +183,36 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
     </video:video>
   </url>
   <url>
-    <loc>https://bthstnn.org/videos/story/7e05eb1f-7a16-452f-a464-f466f0ec1d38/tnn-weather-noreaster/</loc>
-    <lastmod>2026-09-28T00:20:51.28465+00:00</lastmod>
+    <loc>https://bthstnn.org/videos/story/f4b128da-673d-47a5-b05a-eb0e24038624/joining-americas-largest-public-high-school/</loc>
+    <lastmod>2026-11-08T18:33:51.669039+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/tnn-weather-nor-easter-4b97a0a8-e463-45c8-b39c-0f0648311b97.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-05/joining-america-s-largest-public-high-school-ed05c42f-6f3b-4288-8349-6dcb493904e2.webp</image:loc>
+      <image:title>Joining America&apos;s LARGEST Public High School</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-05/joining-america-s-largest-public-high-school-ed05c42f-6f3b-4288-8349-6dcb493904e2.webp</video:thumbnail_loc>
+      <video:title>Joining America&apos;s LARGEST Public High School</video:title>
+      <video:description>Watch Joining America&apos;s LARGEST Public High School from Tech News Network.</video:description>
+      <video:content_loc>https://www.instagram.com/reel/DeIPfDGvhC7/?stkn=MTdkenlwNmExNm56NQ==</video:content_loc>
+      
+      
+      <video:publication_date>2026-10-05T23:01:21.307Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/7e05eb1f-7a16-452f-a464-f466f0ec1d38/tnn-weather-noreaster/</loc>
+    <lastmod>2026-10-22T01:25:20.064017+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/tnn-weather-nor-easter-544f9c7d-e61e-4225-9095-807c4a5e7fbf.webp</image:loc>
       <image:title>TNN Weather: Nor&apos;easter</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/tnn-weather-nor-easter-4b97a0a8-e463-45c8-b39c-0f0648311b97.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/tnn-weather-nor-easter-544f9c7d-e61e-4225-9095-807c4a5e7fbf.webp</video:thumbnail_loc>
       <video:title>TNN Weather: Nor&apos;easter</video:title>
       <video:description>TNN Reporter Jack Tergesen breaks down the Nor’Easter bearing down on the Tri-State area. Impacts will persist until mid-day Monday with on and off rain, and winds steadily decreasing throughout the event.</video:description>
       <video:content_loc>https://www.instagram.com/p/DdxIQ0Bxv0k/</video:content_loc>
@@ -185,14 +226,14 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/99c5a0d1-e9a1-4fbb-9f43-7aed0a7c7cea/introducing-tech-news-network/</loc>
-    <lastmod>2026-09-28T00:20:51.77366+00:00</lastmod>
+    <lastmod>2026-11-06T01:22:08.268106+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tech-news-network-1531f0de-bbeb-4fe6-bebb-5e1ece1f97cb.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/introducing-tech-news-network-1b0b6e35-a407-4c2a-a7fe-55e90e8bc9e3.webp</image:loc>
       <image:title>Introducing Tech News Network. </image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tech-news-network-1531f0de-bbeb-4fe6-bebb-5e1ece1f97cb.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/introducing-tech-news-network-1b0b6e35-a407-4c2a-a7fe-55e90e8bc9e3.webp</video:thumbnail_loc>
       <video:title>Introducing Tech News Network. </video:title>
       <video:description>Watch Introducing Tech News Network.  from Tech News Network.</video:description>
       <video:content_loc>https://www.instagram.com/p/DPfKk73jrtH/</video:content_loc>
@@ -227,14 +268,14 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/c4aeb3e8-1730-4cbc-a6d7-9c940c040cf6/introducing-tnns-marketing-team/</loc>
-    <lastmod>2026-09-28T00:20:53.351107+00:00</lastmod>
+    <lastmod>2026-10-24T04:08:11.19834+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tnn-s-marketing-team-2f8819b0-e0b9-4690-a21f-009df4ddbd5d.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-24/introducing-tnn-s-marketing-team-79ab284c-3f07-432d-aecf-8847cd9e96de.webp</image:loc>
       <image:title>Introducing TNN&apos;s Marketing Team</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tnn-s-marketing-team-2f8819b0-e0b9-4690-a21f-009df4ddbd5d.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-24/introducing-tnn-s-marketing-team-79ab284c-3f07-432d-aecf-8847cd9e96de.webp</video:thumbnail_loc>
       <video:title>Introducing TNN&apos;s Marketing Team</video:title>
       <video:description>Watch Introducing TNN&apos;s Marketing Team from Tech News Network.</video:description>
       <video:content_loc>https://www.instagram.com/p/DSiHj85DqpX/</video:content_loc>
@@ -248,14 +289,14 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/03abb054-4810-424c-8976-498f306c24ac/the-history-of-rocky-s-deli/</loc>
-    <lastmod>2026-09-28T00:21:43.733091+00:00</lastmod>
+    <lastmod>2026-11-06T01:24:43.614584+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/the-history-of-rocky-s-deli-56a8b2ca-0959-4135-983a-e35d57c932ff.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/the-history-of-rocky-s-deli-8b2f8ea8-8a50-4d83-b21f-e099f9d26d63.webp</image:loc>
       <image:title>The History of Rocky’s Deli</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/the-history-of-rocky-s-deli-56a8b2ca-0959-4135-983a-e35d57c932ff.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/the-history-of-rocky-s-deli-8b2f8ea8-8a50-4d83-b21f-e099f9d26d63.webp</video:thumbnail_loc>
       <video:title>The History of Rocky’s Deli</video:title>
       <video:description>Watch The History of Rocky’s Deli from Tech News Network.</video:description>
       <video:content_loc>https://www.instagram.com/p/DXzulx_NhIS/</video:content_loc>
@@ -269,14 +310,14 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/763f9a0c-15b5-415d-8079-05e0a00f4858/introducing-tnn-sports-superbowl-takes/</loc>
-    <lastmod>2026-09-28T00:20:53.81545+00:00</lastmod>
+    <lastmod>2026-11-06T01:24:28.954293+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tnn-sports-superbowl-takes-cb05c261-7631-4783-bc1c-8d4a51dee3d2.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/introducing-tnn-sports-superbowl-takes-9e30be73-9db3-4c0d-be7f-ef6e13abc104.webp</image:loc>
       <image:title>Introducing TNN Sports: Superbowl Takes</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/introducing-tnn-sports-superbowl-takes-cb05c261-7631-4783-bc1c-8d4a51dee3d2.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-20/introducing-tnn-sports-superbowl-takes-9e30be73-9db3-4c0d-be7f-ef6e13abc104.webp</video:thumbnail_loc>
       <video:title>Introducing TNN Sports: Superbowl Takes</video:title>
       <video:description>Watch Introducing TNN Sports: Superbowl Takes from Tech News Network.</video:description>
       <video:content_loc>https://www.instagram.com/p/DUeUrZGD8-0/</video:content_loc>
@@ -290,7 +331,7 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/96bcd650-7526-4e59-9e45-d4f52917f3ca/very-interesting-and-intense-meet-the-cast-of-lost-girl/</loc>
-    <lastmod>2026-05-15T04:10:19.945815+00:00</lastmod>
+    <lastmod>2026-10-24T04:08:27.457168+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://img.youtube.com/vi/uX2bdBxbI-8/hqdefault.jpg</image:loc>
@@ -304,6 +345,29 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
       <video:player_loc>https://www.youtube.com/embed/uX2bdBxbI-8</video:player_loc>
       
       <video:publication_date>2026-05-05T01:35:55.283Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/0acfff16-f72e-49a9-b2ff-04afebad546c/meet-butters-techs-therapy-dog/</loc>
+    <lastmod>2026-11-06T01:23:34.547407+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/thumbnail-1f5af44c-232f-43f7-8050-803b114c1f92.webp</image:loc>
+      <image:title>Meet Butters, Tech&apos;s Therapy Dog!</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/thumbnail-1f5af44c-232f-43f7-8050-803b114c1f92.webp</video:thumbnail_loc>
+      <video:title>Meet Butters, Tech&apos;s Therapy Dog!</video:title>
+      <video:description>Meet Butters, Tech’s Official Therapy Dog!
+~
+*Filmed during the 2025-2026 school year.</video:description>
+      <video:content_loc>https://www.instagram.com/reel/Dd7Fx0jP6Um/?utm_source=ig_web_button_share_sheet&amp;srtk=MWQ1ZGUxMzBkMA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-10-22T01:18:03.777Z</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
       <video:requires_subscription>no</video:requires_subscription>
       <video:live>no</video:live>
@@ -332,7 +396,7 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/1d89a8c3-181a-4a54-b2b0-f0b1b7dc7ffd/looking-back-at-anti-ice-resistance-in-tech/</loc>
-    <lastmod>2026-05-15T04:10:48.959916+00:00</lastmod>
+    <lastmod>2026-11-07T19:59:03.996678+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://img.youtube.com/vi/9GNXWzEFR6E/hqdefault.jpg</image:loc>
@@ -374,7 +438,7 @@ Disclaimer: TNN has confirmed these issues for Brooklyn Tech and Stuyvesant, and
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/fe50a30f-7f6f-4288-9a34-052a03b09bde/who-do-tech-students-have-winning-in-the-nba-finals/</loc>
-    <lastmod>2026-09-28T00:20:55.153451+00:00</lastmod>
+    <lastmod>2026-11-07T19:59:35.195811+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/who-do-tech-students-have-winning-in-the-nba-finals-092b6af0-506b-4b4e-b63e-6860716060b8.webp</image:loc>
@@ -398,7 +462,7 @@ Video Editor: @nicksilverbricks
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/1a6b2c14-59f1-4121-962d-7c39205aabec/who-do-tech-students-think-will-win-the-ncaa-men-s-basketball-championship/</loc>
-    <lastmod>2026-09-28T00:20:55.595245+00:00</lastmod>
+    <lastmod>2026-10-14T22:10:00.396278+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/who-do-tech-students-think-will-win-the-ncaa-men-s-basketbal-d4c48e49-d155-44ac-af1f-f0af0579b9b3.webp</image:loc>
@@ -440,7 +504,7 @@ Video Editor: @nicksilverbricks
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/1f0eb18f-7fb5-4b5d-b4fa-c7c7f4cc8079/where-does-26-see-themselves-in-10-years/</loc>
-    <lastmod>2026-09-28T00:20:56.375619+00:00</lastmod>
+    <lastmod>2026-11-07T19:59:30.465414+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/where-does-26-see-themselves-in-10-years-6b7be6a3-407b-42ed-81cb-fa786d67ef99.webp</image:loc>
@@ -464,15 +528,36 @@ Brought to you by TNN Reporters @jacktergesenn and @annarose_griz !
     </video:video>
   </url>
   <url>
-    <loc>https://bthstnn.org/videos/story/bae1a262-f878-41ec-9f0b-7657eed925d1/a-high-school-student-band-lulu-and-monica-interview/</loc>
-    <lastmod>2026-09-28T00:20:56.899597+00:00</lastmod>
+    <loc>https://bthstnn.org/videos/story/0e8f214c-eb46-4dec-8031-654a6d3580f3/respect-for-all-at-brooklyn-tech/</loc>
+    <lastmod>2026-11-06T01:24:14.35271+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/a-high-school-student-band-lulu-and-monica-interview-277709a2-d315-4494-98f9-3ebb0f5ba383.webp</image:loc>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/respect-for-all-at-brooklyn-tech-f9645221-ada5-4e3a-95a7-eaa5f9fdc823.webp</image:loc>
+      <image:title>Respect for All at Brooklyn Tech</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/respect-for-all-at-brooklyn-tech-f9645221-ada5-4e3a-95a7-eaa5f9fdc823.webp</video:thumbnail_loc>
+      <video:title>Respect for All at Brooklyn Tech</video:title>
+      <video:description>TNN Reporter Iffat Abidah explores Student Government’s newest branch, Respect For All, discussing its purpose, origins, and formation. If you’ve experienced or witnessed bullying, harassment, or discrimination, contact BTHS Respect For All Liaisons Diana Liu (dliu3@schools.nyc.gov) or Christa Martin (Cmartin39@schools.nyc.gov) for support.</video:description>
+      <video:content_loc>https://www.instagram.com/reel/Deu_hTBOs6j/?utm_source=ig_web_button_share_sheet&amp;rpxt=MWQ1ZGUxMzBkMA==</video:content_loc>
+      
+      
+      <video:publication_date>2026-10-22T01:21:10.330Z</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://bthstnn.org/videos/story/bae1a262-f878-41ec-9f0b-7657eed925d1/a-high-school-student-band-lulu-and-monica-interview/</loc>
+    <lastmod>2026-11-14T21:58:34.441377+00:00</lastmod>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/a-high-school-student-band-lulu-and-monica-interview-94567ac3-b095-4f1a-8214-88a94b0c2aa9.webp</image:loc>
       <image:title>A High School Student Band - Lulu and Monica Interview</image:title>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/a-high-school-student-band-lulu-and-monica-interview-277709a2-d315-4494-98f9-3ebb0f5ba383.webp</video:thumbnail_loc>
+      <video:thumbnail_loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-10-22/a-high-school-student-band-lulu-and-monica-interview-94567ac3-b095-4f1a-8214-88a94b0c2aa9.webp</video:thumbnail_loc>
       <video:title>A High School Student Band - Lulu and Monica Interview</video:title>
       <video:description>@_monicalily @lulu.katsuki</video:description>
       <video:content_loc>https://www.instagram.com/reel/DZvbtO9PgS4/?utm_source=ig_web_button_share_sheet&amp;igsh=MzRlODBiNWFlZA==</video:content_loc>
@@ -486,7 +571,7 @@ Brought to you by TNN Reporters @jacktergesenn and @annarose_griz !
   </url>
   <url>
     <loc>https://bthstnn.org/videos/story/72cb6628-c8d1-4220-9466-9fa00d7d9eaf/mamdani-on-public-school-classroom-sizes/</loc>
-    <lastmod>2026-09-28T00:20:57.417595+00:00</lastmod>
+    <lastmod>2026-11-07T19:59:23.238376+00:00</lastmod>
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://jqquxpfmaczfmqvfoqfy.supabase.co/storage/v1/object/public/video-thumbnails/2026-09-28/mamdani-on-public-school-classroom-sizes-9ea01d7a-30d1-41be-85de-b9675f8aaeeb.webp</image:loc>
