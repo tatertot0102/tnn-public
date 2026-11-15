@@ -365,7 +365,15 @@ async function writePrerenders({ videos, profiles }) {
   for (const video of videos) {
     const dir = path.join(distDir, 'videos', 'story', String(video.id), videoSlug(video.title))
     await fs.mkdir(dir, { recursive: true })
-    await fs.writeFile(path.join(dir, 'index.html'), buildStoryPrerender(baseHtml, video))
+    const html = buildStoryPrerender(baseHtml, video)
+    await fs.writeFile(path.join(dir, 'index.html'), html)
+    // Preserve the inbound URL introduced by the one-time C1 hotfix. Phase E
+    // replaces these static aliases with ID-based server-side 301 redirects.
+    if (video.id === 'bf62c27a-fd91-4f89-9801-b64d2f0c976e') {
+      const legacyDir = path.join(distDir, 'videos', 'story', video.id, '11-14-shsat-canceled')
+      await fs.mkdir(legacyDir, { recursive: true })
+      await fs.writeFile(path.join(legacyDir, 'index.html'), html)
+    }
     story += 1
   }
 
