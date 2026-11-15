@@ -171,7 +171,7 @@ export default function TeamPage() {
       const { data, error } = await supabase.functions.invoke('invite-staff', {
         body: { email: inviteEmail.trim(), full_name: inviteName.trim() },
       })
-      if (error || data?.error) throw new Error(data?.error || 'Invitation could not be sent. Check the invitation service and try again.')
+      if (error || data?.error) throw new Error(data?.error || 'The invitation could not be sent. Try again or contact an administrator.')
       setMsg('Invite sent! New staff join as members.')
       setInviteEmail('')
       setInviteName('')
