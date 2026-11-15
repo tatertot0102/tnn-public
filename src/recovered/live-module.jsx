@@ -1078,7 +1078,7 @@ function Ax() {
         children: o.jsx("div", {
           children: y.map(m => o.jsxs(Q, {
             to: Bn(m),
-            children: ["• ", m.title, " ", o.jsxs("small", {
+            children: [m.title, " ", o.jsxs("small", {
               className: "breaking-time",
               children: ["Updated ", relativeTime(publishedTime(m))]
             })]
@@ -1100,20 +1100,14 @@ function Ax() {
         className: "impact-hero-content",
         children: [o.jsxs("span", {
           className: "impact-kicker",
-          children: [o.jsx(lx, {
-            size: 15
-          }), e && e.section === "breaking" ? "Breaking" : "Top Story"]
+          children: e ? gc(e.section) : "Top Story"
         }), e ? o.jsxs("div", {
           className: "impact-hero-link",
           children: [o.jsx("h1", {
             children: e.title
-          }), e.dek && o.jsx("p", {
-            children: e.dek
           }), o.jsxs("div", {
             className: "impact-meta",
-            children: [o.jsx("span", {
-              children: gc(e.section)
-            }), Jt(e).length > 0 && o.jsx(Ox, {
+            children: [Jt(e).length > 0 && o.jsx(Ox, {
               video: e
             }), e.runtime && o.jsx("span", {
               children: e.runtime
